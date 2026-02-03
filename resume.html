@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Taran Pal Singh Heera</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .resume-container {
+      background: var(--bg-card);
+      padding: 3rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      margin: 2rem 0;
+      line-height: 1.8;
+    }
+
+    .resume-section {
+      margin-bottom: 2rem;
+    }
+
+    .resume-section h3 {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.8rem;
+      margin-top: 0;
+    }
+
+    .resume-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .resume-item h4 {
+      margin: 0.5rem 0 0;
+      color: var(--primary);
+    }
+
+    .resume-item .position {
+      color: var(--secondary);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .resume-item .details {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin: 0.3rem 0;
+    }
+
+    .skills-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .resume-container {
+        padding: 1.5rem;
+      }
+
+      .skills-columns {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .download-btn {
+      margin: 2rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="container">
+      <div class="logo">TARAN</div>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="experience.html" class="nav-link">Experience</a></li>
+        <li><a href="resume.html" class="nav-link active">Resume</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- RESUME SECTION -->
+  <section style="min-height: 100vh; padding-top: 8rem;">
+    <div class="container">
+      <h2 style="margin-top: 0;">Resume</h2>
+
+      <div class="download-btn">
+        <a href="#" class="btn btn-primary" onclick="window.print(); return false;">📥 Download PDF</a>
+      </div>
+
+      <div class="resume-container">
+        <!-- HEADER -->
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <h1 style="margin: 0; color: var(--primary);">TARAN PAL SINGH HEERA</h1>
+          <p style="margin: 0.5rem 0; color: var(--secondary);">AI & Machine Learning Engineer</p>
+          <p style="margin: 0.5rem 0; font-size: 0.9rem;">
+            📧 taranpalsingh53@gmail.com | 
+            🔗 <a href="https://linkedin.com/in/taran-pal-singh-heera" style="color: var(--primary);">LinkedIn</a> | 
+            💻 <a href="https://github.com/Taran-heera" style="color: var(--primary);">GitHub</a>
+          </p>
+        </div>
+
+        <!-- PROFESSIONAL SUMMARY -->
+        <div class="resume-section">
+          <h3>Professional Summary</h3>
+          <p>
+            AI and Data Science–focused Computer Science Engineering student specializing in Artificial Intelligence & Machine Learning with strong practical exposure to machine learning systems, deep learning, and CNN-based computer vision applications. Experienced in building real-world AI solutions and deploying models as production services.
+          </p>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="resume-section">
+          <h3>Education</h3>
+          
+          <div class="resume-item">
+            <h4>B.E. Computer Science & Engineering</h4>
+            <p class="position">Specialization: Artificial Intelligence & Machine Learning</p>
+            <p class="details">Sri Ramakrishna Engineering College, Coimbatore</p>
+            <p class="details">CGPA: 8.14 (Till Date)</p>
+          </div>
+
+          <div class="resume-item">
+            <h4>Higher Secondary Education</h4>
+            <p class="position">Science Stream (Physics, Chemistry, Mathematics)</p>
+            <p class="details">Lisieux M.H.S.S, Coimbatore</p>
+            <p class="details">Percentage: 91.6%</p>
+          </div>
+        </div>
+
+        <!-- WORK EXPERIENCE -->
+        <div class="resume-section">
+          <h3>Work Experience</h3>
+          
+          <div class="resume-item">
+            <h4>AI Engineer (Intern)</h4>
+            <p class="position">LogicFocus Technology</p>
+            <p class="details">Jan 2024 - Present</p>
+            <ul style="margin: 0.8rem 0; padding-left: 1.5rem; color: var(--text-secondary);">
+              <li>Developed and deployed machine learning models for data classification and prediction</li>
+              <li>Implemented deep learning solutions using TensorFlow and Keras</li>
+              <li>Created REST APIs to deploy ML models as production services</li>
+              <li>Optimized model performance and reduced inference time</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <h4>AI & Software Engineering Intern</h4>
+            <p class="position">JuzGoDigital</p>
+            <p class="details">June 2023 - Dec 2023</p>
+            <ul style="margin: 0.8rem 0; padding-left: 1.5rem; color: var(--text-secondary);">
+              <li>Built computer vision applications using OpenCV and CNN architectures</li>
+              <li>Developed Streamlit web applications for model visualization</li>
+              <li>Implemented image processing pipelines</li>
+              <li>Performed data preprocessing and augmentation</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <h4>Software Development Intern</h4>
+            <p class="position">Antriva AI Labs</p>
+            <p class="details">Jan 2023 - May 2023</p>
+            <ul style="margin: 0.8rem 0; padding-left: 1.5rem; color: var(--text-secondary);">
+              <li>Assisted in developing machine learning models</li>
+              <li>Implemented data preprocessing scripts and ETL pipelines</li>
+              <li>Conducted literature review on latest AI/ML research</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TECHNICAL SKILLS -->
+        <div class="resume-section">
+          <h3>Technical Skills</h3>
+          
+          <div class="skills-columns">
+            <div>
+              <p><strong>Programming Languages:</strong></p>
+              <p style="color: var(--text-secondary); margin: 0;">Python, Java, JavaScript</p>
+            </div>
+
+            <div>
+              <p><strong>AI/ML Frameworks:</strong></p>
+              <p style="color: var(--text-secondary); margin: 0;">TensorFlow, Keras, PyTorch</p>
+            </div>
+
+            <div>
+              <p><strong>Computer Vision:</strong></p>
+              <p style="color: var(--text-secondary); margin: 0;">OpenCV, CNN, GANs, Image Processing</p>
+            </div>
+
+            <div>
+              <p><strong>Data Science:</strong></p>
+              <p style="color: var(--text-secondary); margin: 0;">NumPy, Pandas, Scikit-learn, Matplotlib</p>
+            </div>
+
+            <div>
+              <p><strong>Web Frameworks:</strong></p>
+              <p style="color: var(--text-secondary); margin: 0;">Streamlit, Flask, REST APIs</p>
+            </div>
+
+            <div>
+              <p><strong>Tools & Technologies:</strong></p>
+              <p style="color: var(--text-secondary); margin: 0;">Git, GitHub, VS Code, Jupyter</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="resume-section">
+          <h3>Key Projects</h3>
+          
+          <div class="resume-item">
+            <h4>CODDS - Cognitive Originality Drift Detection System</h4>
+            <p class="details">AI system for detecting originality drift in content using deep learning</p>
+            <p style="color: var(--text-secondary); margin: 0.5rem 0;">Technologies: TensorFlow, Keras, NLP, Python</p>
+          </div>
+
+          <div class="resume-item">
+            <h4>NeuroFocus - Attention Detection System</h4>
+            <p class="details">Real-time attention detection using CNN and computer vision</p>
+            <p style="color: var(--text-secondary); margin: 0.5rem 0;">Technologies: OpenCV, CNN, TensorFlow, Python</p>
+          </div>
+
+          <div class="resume-item">
+            <h4>Low-Light Image Enhancement using GANs</h4>
+            <p class="details">GAN-based system for enhancing low-light images</p>
+            <p style="color: var(--text-secondary); margin: 0.5rem 0;">Technologies: TensorFlow, GANs, Image Processing</p>
+          </div>
+
+          <div class="resume-item">
+            <h4>Age & Gender Estimation System</h4>
+            <p class="details">CNN-based model for age and gender prediction with web deployment</p>
+            <p style="color: var(--text-secondary); margin: 0.5rem 0;">Technologies: Keras, OpenCV, Streamlit, Python</p>
+          </div>
+        </div>
+
+        <!-- CORE COMPETENCIES -->
+        <div class="resume-section">
+          <h3>Core Competencies</h3>
+          <p>
+            • Machine Learning Model Development<br>
+            • Deep Learning & Neural Networks<br>
+            • Computer Vision & Image Processing<br>
+            • Data Analysis & Feature Engineering<br>
+            • Model Training & Optimization<br>
+            • API Development & Deployment<br>
+            • Data Preprocessing & ETL<br>
+            • Real-time Processing<br>
+            • Problem Solving & Innovation<br>
+            • Collaborative Development
+          </p>
+        </div>
+
+        <!-- ACHIEVEMENTS -->
+        <div class="resume-section">
+          <h3>Achievements & Highlights</h3>
+          <ul style="color: var(--text-secondary); padding-left: 1.5rem;">
+            <li>Specialized in AI & ML with CGPA of 8.14</li>
+            <li>Developed multiple production-ready AI/ML applications</li>
+            <li>Experience with cutting-edge computer vision technologies</li>
+            <li>Strong foundation in deep learning and neural networks</li>
+            <li>Full-stack AI development capabilities</li>
+            <li>Active GitHub contributor with multiple open-source projects</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="download-btn">
+        <a href="#" class="btn btn-secondary" onclick="window.print(); return false;">🖨️ Print Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/Taran-heera" target="_blank" title="GitHub">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/taran-pal-singh-heera" target="_blank" title="LinkedIn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <a href="mailto:taranpalsingh53@gmail.com" title="Email">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+        </a>
+      </div>
+
+      <p>&copy; 2026 Taran Pal Singh Heera. All rights reserved. | Designed & Built with AI</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
