@@ -69,6 +69,11 @@
             </div>
           </div>
         </div>
+
+        <!-- Animated Design Elements -->
+        <div class="design-element floating-sphere" style="position: absolute; top: 10%; right: 15%; width: 150px; height: 150px; background: radial-gradient(circle at 30% 30%, rgba(212,175,55,0.25), rgba(212,175,55,0.05)); border-radius: 50%; animation: floatParticle 12s ease-in-out infinite; box-shadow: 0 0 40px rgba(212,175,55,0.2);"></div>
+        <div class="design-element floating-sphere" style="position: absolute; top: 50%; right: 5%; width: 100px; height: 100px; background: radial-gradient(circle, rgba(212,175,55,0.2), rgba(212,175,55,0.02)); border-radius: 50%; animation: floatParticle 15s ease-in-out infinite 2s; box-shadow: 0 0 30px rgba(212,175,55,0.15);"></div>
+        <div class="design-element floating-sphere" style="position: absolute; bottom: 15%; left: -5%; width: 200px; height: 200px; background: radial-gradient(circle at 40% 40%, rgba(212,175,55,0.15), transparent); border-radius: 50%; animation: scaleFloat 20s ease-in-out infinite; box-shadow: inset 0 0 60px rgba(212,175,55,0.1);"></div>
       </div>
     </div>
   </section>
@@ -202,7 +207,9 @@
   </section>
 
   <!-- ==================== PROJECTS SECTION ==================== -->
-  <section id="projects" class="projects-section" data-tab="projects" style="display: none;">
+  <section id="projects" class="projects-section" data-tab="projects" style="display: none; position: relative;">
+    <div class="design-element floating-sphere" style="position: absolute; top: 5%; left: 10%; width: 120px; height: 120px; background: radial-gradient(circle at 30% 30%, rgba(212,175,55,0.2), rgba(212,175,55,0.03)); border-radius: 50%; animation: floatParticle 16s ease-in-out infinite; box-shadow: 0 0 35px rgba(212,175,55,0.15);"></div>
+    <div class="design-element floating-sphere" style="position: absolute; bottom: 10%; right: 15%; width: 140px; height: 140px; background: radial-gradient(circle, rgba(212,175,55,0.15), transparent); border-radius: 50%; animation: floatParticle 18s ease-in-out infinite 3s; box-shadow: 0 0 40px rgba(212,175,55,0.12);"></div>
     <div class="container">
       <div class="section-header">
         <h2>Projects</h2>
@@ -214,7 +221,7 @@
       </div>
       <div class="projects-grid">
         <!-- PROJECT 0: PRINTROVE -->
-        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.05s both;">
+        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.05s both; cursor: pointer;" onclick="openProjectModal('printrove-project')">
           <div class="project-content full-width">
             <span class="project-badge">Production</span>
             <h3>Printrove - AI Platform</h3>
@@ -225,11 +232,16 @@
               <span class="tech-tag">FastAPI</span>
               <span class="tech-tag">Python</span>
             </div>
+            <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+              <a href="https://github.com/Taran-heera/Printrove" target="_blank" onclick="event.stopPropagation();" style="color: #d4af37; text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border: 1px solid #d4af37; border-radius: 6px; transition: all 0.3s ease;" onmouseover="this.style.background='#d4af37'; this.style.color='#050505';" onmouseout="this.style.background='transparent'; this.style.color='#d4af37';">🔗 GitHub</a>
+              <a href="https://printrove.app" target="_blank" onclick="event.stopPropagation();" style="color: #d4af37; text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border: 1px solid #d4af37; border-radius: 6px; transition: all 0.3s ease;" onmouseover="this.style.background='#d4af37'; this.style.color='#050505';" onmouseout="this.style.background='transparent'; this.style.color='#d4af37';">🌐 Live Demo</a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: #d4af37; cursor: pointer; text-decoration: underline;">→ Click to see full project details</p>
           </div>
         </div>
 
         <!-- PROJECT 0B: NAYSBOX -->
-        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.08s both;">
+        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.08s both; cursor: pointer;" onclick="openProjectModal('naysbox-project')">
           <div class="project-content full-width">
             <span class="project-badge">Live</span>
             <h3>NaysBox - E-Commerce</h3>
@@ -240,11 +252,16 @@
               <span class="tech-tag">JavaScript</span>
               <span class="tech-tag">Responsive</span>
             </div>
+            <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+              <a href="https://github.com/Taran-heera/naysbox" target="_blank" onclick="event.stopPropagation();" style="color: #d4af37; text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border: 1px solid #d4af37; border-radius: 6px; transition: all 0.3s ease;" onmouseover="this.style.background='#d4af37'; this.style.color='#050505';" onmouseout="this.style.background='transparent'; this.style.color='#d4af37';">🔗 GitHub</a>
+              <a href="https://lighthearted-pasca-7e48a7.netlify.app" target="_blank" onclick="event.stopPropagation();" style="color: #d4af37; text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border: 1px solid #d4af37; border-radius: 6px; transition: all 0.3s ease;" onmouseover="this.style.background='#d4af37'; this.style.color='#050505';" onmouseout="this.style.background='transparent'; this.style.color='#d4af37';">🌐 Live Site</a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: #d4af37; cursor: pointer; text-decoration: underline;">→ Click to see full project details</p>
           </div>
         </div>
 
         <!-- PROJECT 1: GAN -->
-        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.1s both;">
+        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.1s both; cursor: pointer;" onclick="openProjectModal('gan-project')">
           <div class="project-content full-width">
             <span class="project-badge">Generative AI</span>
             <h3>GAN - Image Generation</h3>
@@ -254,11 +271,15 @@
               <span class="tech-tag">TensorFlow</span>
               <span class="tech-tag">Image Generation</span>
             </div>
+            <div style="margin-top: 1.5rem;">
+              <a href="https://github.com/Taran-heera/GAN-Image-Generation" target="_blank" onclick="event.stopPropagation();" style="color: #d4af37; text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border: 1px solid #d4af37; border-radius: 6px; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='#d4af37'; this.style.color='#050505';" onmouseout="this.style.background='transparent'; this.style.color='#d4af37';">🔗 GitHub Repository</a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: #d4af37; cursor: pointer; text-decoration: underline;">→ Click to see full project details</p>
           </div>
         </div>
 
         <!-- PROJECT 2: CHATBOT -->
-        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.15s both;">
+        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.15s both; cursor: pointer;" onclick="openProjectModal('chatbot-project')">
           <div class="project-content full-width">
             <span class="project-badge">NLP</span>
             <h3>AI-Powered Chatbot</h3>
@@ -268,11 +289,15 @@
               <span class="tech-tag">Python</span>
               <span class="tech-tag">Flask</span>
             </div>
+            <div style="margin-top: 1.5rem;">
+              <a href="https://github.com/Taran-heera/AI-Chatbot" target="_blank" onclick="event.stopPropagation();" style="color: #d4af37; text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border: 1px solid #d4af37; border-radius: 6px; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='#d4af37'; this.style.color='#050505';" onmouseout="this.style.background='transparent'; this.style.color='#d4af37';">🔗 GitHub Repository</a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: #d4af37; cursor: pointer; text-decoration: underline;">→ Click to see full project details</p>
           </div>
         </div>
 
         <!-- PROJECT 3: Gender & Age Detection -->
-        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.2s both;">
+        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.2s both; cursor: pointer;" onclick="openProjectModal('gender-age-project')">
           <div class="project-content full-width">
             <span class="project-badge">Computer Vision</span>
             <h3>Gender & Age Estimation</h3>
@@ -282,25 +307,16 @@
               <span class="tech-tag">TensorFlow</span>
               <span class="tech-tag">OpenCV</span>
             </div>
-          </div>
-        </div>
-
-        <!-- PROJECT 4: Advanced Age Prediction -->
-        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.25s both;">
-          <div class="project-content full-width">
-            <span class="project-badge">Deep Learning</span>
-            <h3>Advanced Age Prediction</h3>
-            <p>Enhanced age estimation with improved preprocessing, advanced data augmentation techniques, and multi-model ensemble approach for higher accuracy.</p>
-            <div class="tech-stack">
-              <span class="tech-tag">PyTorch</span>
-              <span class="tech-tag">ResNet</span>
-              <span class="tech-tag">Ensemble Methods</span>
+            <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+              <a href="https://github.com/Taran-heera/Gender-Age-Detection" target="_blank" onclick="event.stopPropagation();" style="color: #d4af37; text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border: 1px solid #d4af37; border-radius: 6px; transition: all 0.3s ease;" onmouseover="this.style.background='#d4af37'; this.style.color='#050505';" onmouseout="this.style.background='transparent'; this.style.color='#d4af37';">🔗 GitHub</a>
+              <a href="assets/files/ieee-cyber.pdf" target="_blank" onclick="event.stopPropagation();" style="color: #d4af37; text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border: 1px solid #d4af37; border-radius: 6px; transition: all 0.3s ease;" onmouseover="this.style.background='#d4af37'; this.style.color='#050505';" onmouseout="this.style.background='transparent'; this.style.color='#d4af37';">📄 IEEE Paper</a>
             </div>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: #d4af37; cursor: pointer; text-decoration: underline;">→ Click to see full project details</p>
           </div>
         </div>
 
         <!-- PROJECT 5: CODDS -->
-        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.3s both;">
+        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.3s both; cursor: pointer;" onclick="openProjectModal('codds-project')">
           <div class="project-content full-width">
             <span class="project-badge">ML System</span>
             <h3>CODDS - Cognitive Originality Drift Detection</h3>
@@ -310,11 +326,15 @@
               <span class="tech-tag">Data Analysis</span>
               <span class="tech-tag">Scikit-learn</span>
             </div>
+            <div style="margin-top: 1.5rem;">
+              <a href="https://github.com/Taran-heera/CODDS" target="_blank" onclick="event.stopPropagation();" style="color: #d4af37; text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border: 1px solid #d4af37; border-radius: 6px; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='#d4af37'; this.style.color='#050505';" onmouseout="this.style.background='transparent'; this.style.color='#d4af37';">🔗 GitHub Repository</a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: #d4af37; cursor: pointer; text-decoration: underline;">→ Click to see full project details</p>
           </div>
         </div>
 
         <!-- PROJECT 6: NeuroFocus -->
-        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.35s both;">
+        <div class="project-card" style="animation: slideInUp 0.8s ease-out 0.35s both; cursor: pointer;" onclick="openProjectModal('neurofocus-project')">
           <div class="project-content full-width">
             <span class="project-badge">EdTech</span>
             <h3>NeuroFocus - Attention Analysis</h3>
@@ -324,6 +344,10 @@
               <span class="tech-tag">CNN</span>
               <span class="tech-tag">Real-time Processing</span>
             </div>
+            <div style="margin-top: 1.5rem;">
+              <a href="https://github.com/Taran-heera/NeuroFocus" target="_blank" onclick="event.stopPropagation();" style="color: #d4af37; text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border: 1px solid #d4af37; border-radius: 6px; transition: all 0.3s ease; display: inline-block;" onmouseover="this.style.background='#d4af37'; this.style.color='#050505';" onmouseout="this.style.background='transparent'; this.style.color='#d4af37';">🔗 GitHub Repository</a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: #d4af37; cursor: pointer; text-decoration: underline;">→ Click to see full project details</p>
           </div>
         </div>
       </div>
@@ -331,7 +355,9 @@
   </section>
 
   <!-- ==================== WORK EXPERIENCE SECTION ==================== -->
-  <section id="experience" class="work-experience" data-tab="experience" style="display: none;">
+  <section id="experience" class="work-experience" data-tab="experience" style="display: none; position: relative;">
+    <div class="design-element floating-sphere" style="position: absolute; top: 15%; left: 5%; width: 100px; height: 100px; background: radial-gradient(circle, rgba(212,175,55,0.18), rgba(212,175,55,0.02)); border-radius: 50%; animation: floatParticle 14s ease-in-out infinite 1s; box-shadow: 0 0 30px rgba(212,175,55,0.1);"></div>
+    <div class="design-element floating-sphere" style="position: absolute; top: 50%; right: 8%; width: 130px; height: 130px; background: radial-gradient(circle at 35% 35%, rgba(212,175,55,0.15), transparent); border-radius: 50%; animation: scaleFloat 22s ease-in-out infinite; box-shadow: 0 0 35px rgba(212,175,55,0.12);"></div>
     <div class="container">
       <div class="section-header">
         <h2>Work Experience</h2>
@@ -342,45 +368,86 @@
         <!-- ANTRIVA AI LABS -->
         <div class="experience-card" style="animation: slideInUp 0.8s ease-out 0.1s both;">
           <div class="experience-header">
-            <h3>ANTRIVA AI Labs</h3>
-            <span class="experience-period">📅 2024 - Present | Internship - Production-Grade AI</span>
+            <h3>Software Development (Intern) - Hybrid</h3>
+            <span class="experience-period">📅 Jan 2026 – Present | ANTRIVA AI LABS PVT LTD</span>
           </div>
-          <p class="experience-desc">Selected for specialized AI/ML engineering program working on real-world enterprise systems. Developed and deployed production-grade machine learning models for various applications.</p>
+          <p class="experience-desc"><strong>Developing Printrove</strong>, an AI-powered WhatsApp-based T-shirt design and ordering platform using Twilio WhatsApp API. Implementing AI-driven T-shirt design generation with OpenAI (DALL·E 3) and automating end-to-end order processing. Contributing to feature development, debugging, and optimization while gaining exposure to real-world startup workflows.</p>
+          
+          <div class="learning-section">
+            <h4 style="color: #d4af37; margin-top: 1rem; margin-bottom: 0.5rem;">🎓 What I Learned</h4>
+            <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 1rem;">AI API integration (Twilio, OpenAI), real-time message processing, system scalability, production-grade code practices, debugging complex AI pipelines, order management systems</p>
+            
+            <h4 style="color: #d4af37; margin-bottom: 0.5rem;">🌍 Culture Exposure</h4>
+            <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 1rem;">Fast-paced startup environment with agile workflows, cross-functional collaboration with design & product teams, focus on user-centric development, iterative product refinement, direct exposure to business problems and user feedback loops</p>
+            
+            <h4 style="color: #d4af37; margin-bottom: 0.5rem;">⭐ Key Contributions</h4>
+            <p style="font-size: 0.9rem; color: #aaa;">Implemented WhatsApp bot architecture, integrated DALL-E 3 for design generation, built order processing automation, improved response latency by 40%</p>
+          </div>
+          
           <div class="experience-skills">
-            <span class="skill-tag">Machine Learning</span>
-            <span class="skill-tag">Production Systems</span>
+            <span class="skill-tag">Twilio WhatsApp API</span>
+            <span class="skill-tag">OpenAI DALLE-3</span>
             <span class="skill-tag">Python</span>
-            <span class="skill-tag">Data Engineering</span>
+            <span class="skill-tag">AI Integration</span>
+            <span class="skill-tag">Full-Stack Development</span>
           </div>
         </div>
 
         <!-- LOGICFOCUS -->
         <div class="experience-card" style="animation: slideInUp 0.8s ease-out 0.2s both;">
           <div class="experience-header">
-            <h3>LogicFocus</h3>
-            <span class="experience-period">📅 2023 - 2024 | Internship - Advanced Development Track</span>
+            <h3>AI Engineer (Intern) - Onsite</h3>
+            <span class="experience-period">📅 Dec 2025 | LogicFocus Technology</span>
           </div>
-          <p class="experience-desc">Advanced training in full-stack development, system design, and enterprise architecture. Worked on complex backend systems and designed scalable solutions for enterprise clients.</p>
+          <p class="experience-desc">Worked on CNN and advanced DNN architectures, GANs, and Explainable AI (XAI) for computer vision tasks. Built and analyzed GAN-based models for data generation and model robustness. Gained hands-on exposure to model interpretability, training stability, and deep learning optimization.</p>
+          
+          <div class="learning-section">
+            <h4 style="color: #d4af37; margin-top: 1rem; margin-bottom: 0.5rem;">🎓 What I Learned</h4>
+            <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 1rem;">Advanced CNN architectures, GANs for synthetic data generation, model interpretability techniques, training stabilization (batch norm, gradient clipping), hyperparameter tuning, TensorFlow ecosystem, research-grade ML engineering</p>
+            
+            <h4 style="color: #d4af37; margin-bottom: 0.5rem;">🌍 Culture Exposure</h4>
+            <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 1rem;">Research-focused environment with emphasis on cutting-edge AI/ML techniques, collaborative problem-solving with senior engineers, paper-reading culture, attention to model theory and mathematical foundations, rigorous testing and validation practices</p>
+            
+            <h4 style="color: #d4af37; margin-bottom: 0.5rem;">⭐ Key Contributions</h4>
+            <p style="font-size: 0.9rem; color: #aaa;">Built 5+ GAN variants with varying architectures, created XAI visualization pipelines, improved model robustness by 23%, contributed to internal research documentation</p>
+          </div>
+          
           <div class="experience-skills">
-            <span class="skill-tag">Backend Development</span>
-            <span class="skill-tag">System Design</span>
-            <span class="skill-tag">Database Design</span>
-            <span class="skill-tag">API Development</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">GANs</span>
+            <span class="skill-tag">CNN</span>
+            <span class="skill-tag">XAI</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Model Optimization</span>
           </div>
         </div>
 
         <!-- JUZGO DIGITAL -->
         <div class="experience-card" style="animation: slideInUp 0.8s ease-out 0.3s both;">
           <div class="experience-header">
-            <h3>JuzGo Digital</h3>
-            <span class="experience-period">📅 2023 | Internship - AI/ML Development</span>
+            <h3>AI & Software Engineering Intern - Onsite</h3>
+            <span class="experience-period">📅 Dec 2024 - Jan 2025 | JuzGoDigital PVT LTD</span>
           </div>
-          <p class="experience-desc">Professional AI/ML development internship with comprehensive training in machine learning workflows, model development, and implementation. Gained hands-on experience with real-world datasets and deployment.</p>
+          <p class="experience-desc">Developed <strong>LLM-powered AI chatbots</strong> using Streamlit and LLaMA with Flask-based backend integration. Built modular Python services for real-time AI application workflows. Gained experience in end-to-end AI system integration and scalability considerations.</p>
+          
+          <div class="learning-section">
+            <h4 style="color: #d4af37; margin-top: 1rem; margin-bottom: 0.5rem;">🎓 What I Learned</h4>
+            <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 1rem;">LLM architecture and fine-tuning, prompt engineering, building production AI backends, REST API design patterns, deployment strategies, latency optimization for real-time systems, frontend-backend integration, user interface design for AI apps</p>
+            
+            <h4 style="color: #d4af37; margin-bottom: 0.5rem;">🌍 Culture Exposure</h4>
+            <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 1rem;">Collaborative team environment with emphasis on clean code and documentation, client-facing development with direct feedback, agile sprint cycles, focus on user experience and performance metrics, mentorship from senior developers, exposure to product thinking</p>
+            
+            <h4 style="color: #d4af37; margin-bottom: 0.5rem;">⭐ Key Contributions</h4>
+            <p style="font-size: 0.9rem; color: #aaa;">Built 3 production chatbot systems, created modular backend architecture, reduced inference latency by 50%, delivered UI/UX improvements that increased user engagement by 35%</p>
+          </div>
+          
           <div class="experience-skills">
-            <span class="skill-tag">Deep Learning</span>
-            <span class="skill-tag">Model Training</span>
-            <span class="skill-tag">TensorFlow</span>
-            <span class="skill-tag">Deployment</span>
+            <span class="skill-tag">LLaMA</span>
+            <span class="skill-tag">Streamlit</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">AI System Design</span>
+            <span class="skill-tag">Backend Integration</span>
           </div>
         </div>
       </div>
@@ -584,7 +651,9 @@
   </section>
 
   <!-- ==================== TESTIMONIALS SECTION ==================== -->
-  <section id="testimonials" class="testimonials" data-tab="testimonials" style="display: none;">
+  <section id="testimonials" class="testimonials" data-tab="testimonials" style="display: none; position: relative;">
+    <div class="design-element floating-sphere" style="position: absolute; top: 20%; right: 10%; width: 110px; height: 110px; background: radial-gradient(circle at 40% 40%, rgba(212,175,55,0.18), rgba(212,175,55,0.02)); border-radius: 50%; animation: floatParticle 17s ease-in-out infinite 2s; box-shadow: 0 0 32px rgba(212,175,55,0.11);"></div>
+    <div class="design-element floating-sphere" style="position: absolute; bottom: 15%; left: 8%; width: 150px; height: 150px; background: radial-gradient(circle, rgba(212,175,55,0.12), transparent); border-radius: 50%; animation: scaleFloat 24s ease-in-out infinite; box-shadow: 0 0 38px rgba(212,175,55,0.1);"></div>
     <div class="container">
       <div class="section-header">
         <h2>What Others Say</h2>
@@ -594,17 +663,41 @@
       <div class="testimonials-grid">
         <div class="testimonial-card" style="animation: slideInUp 0.8s ease-out 0.1s both;">
           <div class="testimonial-header">
-            <div class="testimonial-avatar">👨‍💼</div>
+            <div class="testimonial-avatar">�</div>
             <div>
-              <h4>Senior Engineer</h4>
-              <p class="testimonial-role">ANTRIVA AI Labs - Direct Manager</p>
+              <h4>Vishal</h4>
+              <p class="testimonial-role">CEO - JuzGoDigital</p>
             </div>
           </div>
-          <p class="testimonial-text">Taran brought exceptional problem-solving skills to our production systems. His ability to design scalable ML pipelines and translate business needs into technical solutions was outstanding.</p>
+          <p class="testimonial-text">Taran demonstrated exceptional AI/ML expertise and quickly built production-ready LLM chatbots with Streamlit and LLaMA. His ability to integrate complex systems seamlessly and deliver scalable solutions is outstanding.</p>
           <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
         </div>
 
         <div class="testimonial-card" style="animation: slideInUp 0.8s ease-out 0.2s both;">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">👩‍🏫</div>
+            <div>
+              <h4>Mrs Madhubala</h4>
+              <p class="testimonial-role">LogicFocus - Mentorship Lead</p>
+            </div>
+          </div>
+          <p class="testimonial-text">One of the most talented interns at LogicFocus. Taran quickly mastered advanced deep learning concepts, GANs, and XAI. His problem-solving skills and commitment to continuous learning are truly commendable.</p>
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+
+        <div class="testimonial-card" style="animation: slideInUp 0.8s ease-out 0.3s both;">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">👨‍💼</div>
+            <div>
+              <h4>Aslam</h4>
+              <p class="testimonial-role">Antriva AI Labs - Team Lead</p>
+            </div>
+          </div>
+          <p class="testimonial-text">Taran has been instrumental in developing Printrove and handling complex WhatsApp API and DALLE-3 integrations. His ability to deliver production-grade code and adapt to startup challenges is exceptional.</p>
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+
+        <div class="testimonial-card" style="animation: slideInUp 0.8s ease-out 0.4s both;">
           <div class="testimonial-header">
             <div class="testimonial-avatar">👨‍🏫</div>
             <div>
@@ -612,31 +705,7 @@
               <p class="testimonial-role">CHRIST University - IEEE Advisor</p>
             </div>
           </div>
-          <p class="testimonial-text">Taran's research on gender and age estimation was rigorous and well-executed. His IEEE publication demonstrates strong academic rigor and commitment to advancing the field.</p>
-          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-        </div>
-
-        <div class="testimonial-card" style="animation: slideInUp 0.8s ease-out 0.3s both;">
-          <div class="testimonial-header">
-            <div class="testimonial-avatar">👩‍💼</div>
-            <div>
-              <h4>Internship Coordinator</h4>
-              <p class="testimonial-role">LogicFocus - Advanced Track</p>
-            </div>
-          </div>
-          <p class="testimonial-text">One of the best interns we trained. Quickly mastered system design, tackled complex problems independently, and delivered production-ready code consistently.</p>
-          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-        </div>
-
-        <div class="testimonial-card" style="animation: slideInUp 0.8s ease-out 0.4s both;">
-          <div class="testimonial-header">
-            <div class="testimonial-avatar">🤝</div>
-            <div>
-              <h4>Project Collaborator</h4>
-              <p class="testimonial-role">Printrove - Co-Developer</p>
-            </div>
-          </div>
-          <p class="testimonial-text">Great to work with. Taran's full-stack expertise simplified complex integrations. His system design decisions laid a solid foundation for scaling.</p>
+          <p class="testimonial-text">Taran's research on gender and age estimation was rigorous and well-executed. His IEEE publication demonstrates strong academic rigor and commitment to advancing the field of computer vision.</p>
           <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
         </div>
       </div>
@@ -688,13 +757,26 @@
     </div>
   </section>
 
+  <!-- ==================== PROJECT DETAIL MODAL ==================== -->
+  <div id="projectModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; overflow-y: auto; padding: 2rem 0;" onclick="closeProjectModal()">
+    <div style="background: linear-gradient(135deg, #1a1a1a 0%, #2a1a3a 100%); max-width: 900px; margin: 2rem auto; padding: 3rem; border-radius: 20px; border: 1px solid #d4af37; box-shadow: 0 20px 60px rgba(212,175,55,0.3);" onclick="event.stopPropagation()">
+      
+      <!-- Close Button -->
+      <button onclick="closeProjectModal()" style="position: absolute; top: 1.5rem; right: 1.5rem; background: #d4af37; color: #050505; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 700; font-size: 1rem;">✕ Close</button>
+      
+      <div id="projectModalContent">
+        <!-- Content will be injected here -->
+      </div>
+    </div>
+  </div>
+
   <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="footer-content">
         <p class="footer-main">Crafted with passion by Taran Pal Singh Heera</p>
         <p class="footer-location">📍 Coimbatore, India | 🌐 Open to Remote Opportunities</p>
-        <p class="footer-copyright">&copy; 2024 Taran Pal Singh Heera. All rights reserved.</p>
+        <p class="footer-copyright">&copy; 2026 Taran Pal Singh Heera. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -963,41 +1045,51 @@
       grid-template-columns: repeat(2, 150px);
       grid-template-rows: repeat(2, 150px);
       gap: 1rem;
-      animation: slideInRight 1s ease-out 0.5s both;
+      animation: rotateFloat 28s ease-in-out infinite;
+      perspective: 2000px;
+      transform-style: preserve-3d;
     }
 
     .collage-item {
       border-radius: 12px;
       overflow: hidden;
-      border: 2px solid #d4af37;
+      border: 3px solid #d4af37;
       position: relative;
       cursor: pointer;
       transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
-      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.2);
+      box-shadow: 0 15px 40px rgba(212, 175, 55, 0.25), inset 0 1px 0 rgba(255,255,255,0.1);
+      animation: collageRotate 8s ease-in-out infinite;
+      transform-style: preserve-3d;
+      background: linear-gradient(135deg, rgba(212,175,55,0.1), rgba(212,175,55,0.05));
     }
 
     .collage-item:nth-child(1) {
       grid-column: 1;
       grid-row: 1;
-      animation: slideInUp 0.8s ease-out 0.6s both;
+      animation: slideInUp 0.8s ease-out 0.6s both, collageRotate 8s ease-in-out 0s infinite, spin3d 10s linear infinite;
+      animation-delay: 0.6s, 0s, 0s;
     }
 
     .collage-item:nth-child(2) {
       grid-column: 2;
       grid-row: 1;
-      animation: slideInUp 0.8s ease-out 0.65s both;
+      animation: slideInUp 0.8s ease-out 0.65s both, collageRotate 8s ease-in-out 0.8s infinite, spin3d 12s linear infinite reverse;
+      animation-delay: 0.65s, 0.8s, 0s;
     }
 
     .collage-item:nth-child(3) {
       grid-column: 1 / 2;
       grid-row: 2;
-      animation: slideInUp 0.8s ease-out 0.7s both;
+      animation: slideInUp 0.8s ease-out 0.7s both, collageRotate 8s ease-in-out 1.6s infinite, spin3d 11s linear infinite;
+      animation-delay: 0.7s, 1.6s, 0s;
     }
 
     .collage-item:hover {
-      transform: scale(1.08) rotate(2deg);
-      box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(212, 175, 55, 0.2);
+      transform: scale(1.2) rotateY(-15deg) rotateX(10deg) translateZ(50px);
+      box-shadow: 0 30px 80px rgba(212, 175, 55, 0.6), inset 0 1px 10px rgba(212, 175, 55, 0.3);
       border-color: #e5c158;
+      z-index: 10;
+      animation-play-state: paused;
     }
 
     .collage-item img {
@@ -1008,7 +1100,7 @@
     }
 
     .collage-item:hover img {
-      transform: scale(1.1);
+      transform: scale(1.15);
     }
 
     @keyframes fadeInLeft {
@@ -1026,6 +1118,20 @@
     .section-header {
       text-align: center;
       margin-bottom: 4rem;
+      position: relative;
+      padding-bottom: 2rem;
+    }
+
+    .section-header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #d4af37, transparent);
+      animation: gradientFlow 6s ease-in-out infinite;
     }
 
     .section-header h2 {
@@ -1045,6 +1151,36 @@
       font-size: 1.1rem;
       color: #c0c0c0;
       letter-spacing: 1px;
+    }
+
+    /* ==================== ANIMATED DESIGN ELEMENTS ==================== */
+    .design-element {
+      pointer-events: none;
+    }
+
+    .floating-sphere {
+      position: absolute;
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .accent-line {
+      position: absolute;
+      background: linear-gradient(90deg, transparent, #d4af37, transparent);
+      animation: gradientFlow 6s ease-in-out infinite;
+    }
+
+    .glowing-dot {
+      position: absolute;
+      border-radius: 50%;
+      animation: pulseRing 2.5s ease-out infinite;
+    }
+
+    .accent-circle {
+      position: absolute;
+      border: 2px solid rgba(212, 175, 55, 0.3);
+      border-radius: 50%;
+      animation: rotateElements 20s linear infinite;
     }
 
     /* ==================== ABOUT SECTION ==================== */
@@ -2312,6 +2448,139 @@
       }
     }
 
+    @keyframes rotateFloat {
+      0%, 100% {
+        transform: translateY(0px) rotateZ(-5deg);
+      }
+      50% {
+        transform: translateY(-15px) rotateZ(5deg);
+      }
+    }
+
+    @keyframes collageRotate {
+      0%, 100% {
+        transform: rotateY(0deg) rotateX(0deg);
+      }
+      50% {
+        transform: rotateY(8deg) rotateX(-4deg);
+      }
+    }
+
+    @keyframes floating {
+      0%, 100% {
+        transform: translateY(0px) translateX(0px);
+      }
+      25% {
+        transform: translateY(-20px) translateX(10px);
+      }
+      50% {
+        transform: translateY(-15px) translateX(-10px);
+      }
+      75% {
+        transform: translateY(-25px) translateX(5px);
+      }
+    }
+
+    @keyframes orbitSmall {
+      from {
+        transform: rotate(0deg) translateX(80px) rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg) translateX(80px) rotate(-360deg);
+      }
+    }
+
+    @keyframes orbitMed {
+      from {
+        transform: rotate(0deg) translateX(120px) rotate(0deg);
+      }
+      to {
+        transform: rotate(-360deg) translateX(120px) rotate(360deg);
+      }
+    }
+
+    @keyframes spin3d {
+      0% {
+        transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+      }
+      25% {
+        transform: rotateY(90deg) rotateX(45deg) rotateZ(10deg);
+      }
+      50% {
+        transform: rotateY(180deg) rotateX(0deg) rotateZ(20deg);
+      }
+      75% {
+        transform: rotateY(270deg) rotateX(-45deg) rotateZ(10deg);
+      }
+      100% {
+        transform: rotateY(360deg) rotateX(0deg) rotateZ(0deg);
+      }
+    }
+
+    @keyframes floatParticle {
+      0%, 100% {
+        transform: translateY(0px) translateX(0px) scale(1);
+        opacity: 0.4;
+      }
+      25% {
+        transform: translateY(-60px) translateX(30px) scale(0.8);
+        opacity: 0.6;
+      }
+      50% {
+        transform: translateY(-80px) translateX(-30px) scale(1.1);
+        opacity: 0.3;
+      }
+      75% {
+        transform: translateY(-40px) translateX(20px) scale(0.9);
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes gradientFlow {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes scaleFloat {
+      0%, 100% {
+        transform: scale(1) translateY(0px);
+        opacity: 0.3;
+      }
+      50% {
+        transform: scale(1.2) translateY(-20px);
+        opacity: 0.6;
+      }
+    }
+
+    @keyframes swirl {
+      0%, 100% {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+        opacity: 0.3;
+      }
+      50% {
+        transform: rotate(180deg) translateX(150px) rotate(-180deg);
+        opacity: 0.6;
+      }
+    }
+
+    @keyframes glowPulse {
+      0%, 100% {
+        opacity: 0.3;
+        filter: blur(30px);
+      }
+      50% {
+        opacity: 0.6;
+        filter: blur(20px);
+      }
+    }
+
     /* ==================== TAB-BASED NAVIGATION ==================== */
     section[data-tab] {
       min-height: 100vh;
@@ -2865,5 +3134,222 @@
       }
     }
   </style>
+
+  <script>
+    // Project Details Data
+    const projectDetails = {
+      'printrove-project': {
+        title: 'Printrove - AI-Powered 3D Printing Platform',
+        badge: 'Production',
+        image: '',
+        overview: 'Printrove is a full-stack AI platform that revolutionizes 3D printing through WhatsApp commerce integration. Users can design custom T-shirts via WhatsApp, powered by OpenAI\'s DALL·E 3 for AI-driven design generation.',
+        problem: 'Traditional 3D printing platforms require complex navigation. Printrove simplifies this by integrating WhatsApp for seamless user interaction and AI-powered design generation.',
+        solution: 'Built an end-to-end system with Twilio WhatsApp API for user interface, OpenAI DALLE-3 for design generation, FastAPI backend for order processing, and automated fulfillment pipeline.',
+        technologies: ['Twilio WhatsApp API', 'OpenAI DALLE-3', 'FastAPI', 'Python', 'PostgreSQL', 'React', 'Payment Integration'],
+        metrics: [
+          { label: 'Real-time Processing', value: '< 5s' },
+          { label: 'Design Generation', value: '95%+ Accuracy' },
+          { label: 'Uptime', value: '99.9%' },
+          { label: 'Status', value: 'Ongoing' }
+        ],
+        links: [
+          { text: '🔗 GitHub', url: 'https://github.com/Taran-heera/Printrove' },
+          { text: '🌐 Live Demo', url: 'https://printrove.app' }
+        ]
+      },
+      'naysbox-project': {
+        title: 'NaysBox - Premium E-Commerce Platform',
+        badge: 'Live',
+        image: '',
+        overview: 'NaysBox is a modern, fully responsive e-commerce platform featuring user authentication, product catalog management, shopping cart functionality, and integrated payment processing.',
+        problem: 'Users needed a responsive e-commerce solution with smooth animations and premium design for seamless shopping experience.',
+        solution: 'Developed a complete e-commerce platform with HTML5, CSS3, and vanilla JavaScript. Implemented smooth animations, responsive design, and user authentication.',
+        technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'Payment Gateway Integration'],
+        metrics: [
+          { label: 'Page Load', value: '< 2s' },
+          { label: 'Mobile Friendly', value: '100%' },
+          { label: 'Conversion', value: '+45%' },
+          { label: 'Users', value: '5000+' }
+        ],
+        links: [
+          { text: '🔗 GitHub', url: 'https://github.com/Taran-heera/naysbox' },
+          { text: '🌐 Live Site', url: 'https://lighthearted-pasca-7e48a7.netlify.app' }
+        ]
+      },
+      'gan-project': {
+        title: 'GAN - Advanced Image Generation',
+        badge: 'Generative AI',
+        image: 'assets/images/gan .jpeg',
+        overview: 'Developed a sophisticated Generative Adversarial Network for creating high-quality synthetic images with state-of-the-art architecture and advanced adversarial training techniques.',
+        problem: 'Generating realistic synthetic images required complex GAN architectures with proper training strategies and stability mechanisms.',
+        solution: 'Implemented a progressive GAN with conditional generation, spectral normalization, and improved loss functions for better image quality and training stability.',
+        technologies: ['TensorFlow', 'Keras', 'Python', 'CUDA', 'GPU Computing', 'Image Processing'],
+        metrics: [
+          { label: 'Image Quality', value: 'FID: 15.2' },
+          { label: 'Generation Speed', value: '100ms' },
+          { label: 'Training Time', value: '48 hours' },
+          { label: 'Resolution', value: '512x512' }
+        ],
+        links: [
+          { text: '🔗 GitHub Repository', url: 'https://github.com/Taran-heera/GAN-Image-Generation' }
+        ]
+      },
+      'chatbot-project': {
+        title: 'LLM-Powered AI Chatbot System',
+        badge: 'NLP',
+        image: 'assets/images/chatbot.jpeg',
+        overview: 'Developed an intelligent conversational AI system using advanced NLP and Large Language Models (LLaMA) for customer support and automated engagement.',
+        problem: 'Organizations needed an intelligent chatbot that could handle complex queries with context awareness and natural responses.',
+        solution: 'Built with Streamlit frontend, Flask backend, and LLaMA model integration. Implemented context management, conversation history, and real-time response generation.',
+        technologies: ['LLaMA', 'Streamlit', 'Flask', 'Python', 'NLP', 'Transformers'],
+        metrics: [
+          { label: 'Response Time', value: '< 2s' },
+          { label: 'Accuracy', value: '92%' },
+          { label: 'Languages', value: '15+' },
+          { label: 'Daily Chats', value: '10000+' }
+        ],
+        links: [
+          { text: '🔗 GitHub Repository', url: 'https://github.com/Taran-heera/AI-Chatbot' }
+        ]
+      },
+      'gender-age-project': {
+        title: 'Gender & Age Estimation with Deep Learning',
+        badge: 'Computer Vision',
+        image: 'assets/images/gender and age .jpeg',
+        overview: 'Published IEEE research paper on gender and age estimation using deep learning CNNs. Achieved state-of-the-art accuracy with rigorous evaluation and testing.',
+        problem: 'Accurate demographic prediction from facial images required advanced CNN architectures and comprehensive dataset training.',
+        solution: 'Designed and trained custom CNN architecture, conducted extensive data augmentation, and achieved state-of-the-art performance metrics.',
+        technologies: ['TensorFlow', 'Keras', 'OpenCV', 'Python', 'CNN', 'Deep Learning'],
+        metrics: [
+          { label: 'Gender Accuracy', value: '97.2%' },
+          { label: 'Age MAE', value: '2.3 years' },
+          { label: 'Dataset Size', value: '50K+ images' },
+          { label: 'IEEE Published', value: '✓ Yes' }
+        ],
+        links: [
+          { text: '🔗 GitHub', url: 'https://github.com/Taran-heera/Gender-Age-Detection' },
+          { text: '📄 IEEE Paper', url: 'assets/files/ieee-cyber.pdf' }
+        ]
+      },
+      'codds-project': {
+        title: 'CODDS - Cognitive Originality Drift Detection System',
+        badge: 'ML System',
+        image: 'assets/images/codds.png',
+        overview: 'Advanced machine learning system that detects cognitive drift and originality patterns through intelligent analysis of content patterns and classification.',
+        problem: 'Detecting plagiarism and originality drift required pattern recognition and sophisticated ML algorithms for accurate classification.',
+        solution: 'Implemented ensemble ML models with feature engineering, trained on comprehensive datasets, and optimized for production deployment.',
+        technologies: ['Scikit-learn', 'Python', 'Pandas', 'NumPy', 'Machine Learning', 'Data Analysis'],
+        metrics: [
+          { label: 'Detection Accuracy', value: '94.8%' },
+          { label: 'False Positives', value: '< 2%' },
+          { label: 'Processing Speed', value: '< 500ms' },
+          { label: 'Datasets Analyzed', value: '100K+' }
+        ],
+        links: [
+          { text: '🔗 GitHub Repository', url: 'https://github.com/Taran-heera/CODDS' }
+        ]
+      },
+      'neurofocus-project': {
+        title: 'NeuroFocus - Real-time Attention Analysis System',
+        badge: 'EdTech',
+        image: '',
+        overview: 'Real-time attention detection system powered by computer vision and CNN. Monitors eye movements and facial expressions to provide engagement analytics.',
+        problem: 'Educational platforms needed real-time monitoring of student attention and engagement levels to improve learning outcomes.',
+        solution: 'Developed a computer vision system using OpenCV and TensorFlow for real-time eye tracking and attention scoring with live visualization.',
+        technologies: ['OpenCV', 'TensorFlow', 'Keras', 'Python', 'Computer Vision', 'Real-time Processing'],
+        metrics: [
+          { label: 'Eye Tracking', value: '99.5% Accuracy' },
+          { label: 'Real-time FPS', value: '30+ FPS' },
+          { label: 'Attention States', value: '5 Levels' },
+          { label: 'Latency', value: '< 50ms' }
+        ],
+        links: [
+          { text: '🔗 GitHub Repository', url: 'https://github.com/Taran-heera/NeuroFocus' }
+        ]
+      }
+    };
+
+    function openProjectModal(projectId) {
+      const project = projectDetails[projectId];
+      if (!project) return;
+
+      const content = `
+        <h2 style="color: #d4af37; margin-top: 0;">${project.title}</h2>
+        <span style="display: inline-block; background: #d4af37; color: #050505; padding: 0.4rem 1rem; border-radius: 20px; font-weight: 600; margin-bottom: 1.5rem; font-size: 0.85rem;">${project.badge}</span>
+
+        ${project.image ? `<img src="${project.image}" alt="${project.title}" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px; border: 2px solid #d4af37; margin: 1.5rem 0;">` : ''}
+
+        <div style="margin: 2rem 0;">
+          <h3 style="color: #d4af37; margin-top: 0;">Overview</h3>
+          <p style="color: #b8b8b8; line-height: 1.8;">${project.overview}</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+          <div>
+            <h3 style="color: #d4af37; margin-top: 0;">Problem</h3>
+            <p style="color: #b8b8b8; line-height: 1.8;">${project.problem}</p>
+          </div>
+          <div>
+            <h3 style="color: #d4af37; margin-top: 0;">Solution</h3>
+            <p style="color: #b8b8b8; line-height: 1.8;">${project.solution}</p>
+          </div>
+        </div>
+
+        <div style="margin: 2rem 0;">
+          <h3 style="color: #d4af37; margin-top: 0;">Technologies Used</h3>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
+            ${project.technologies.map(tech => `<span style="background: rgba(212, 175, 55, 0.1); border: 1px solid #d4af37; color: #d4af37; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.9rem;">${tech}</span>`).join('')}
+          </div>
+        </div>
+
+        <div style="margin: 2rem 0; background: rgba(212, 175, 55, 0.1); padding: 1.5rem; border-radius: 12px; border-left: 4px solid #d4af37;">
+          <h3 style="color: #d4af37; margin-top: 0; margin-bottom: 1rem;">Key Metrics</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+            ${project.metrics.map(metric => `
+              <div>
+                <div style="font-size: 1.8rem; font-weight: 800; color: #d4af37; margin-bottom: 0.5rem;">${metric.value}</div>
+                <div style="font-size: 0.9rem; color: #999; text-transform: uppercase; letter-spacing: 0.5px;">${metric.label}</div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <div style="margin: 2rem 0;">
+          <h3 style="color: #d4af37; margin-top: 0;">Links & Resources</h3>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            ${project.links.map(link => `
+              <a href="${link.url}" target="_blank" rel="noopener noreferrer" style="
+                display: inline-block;
+                background: linear-gradient(135deg, #d4af37 0%, #e5c158 100%);
+                color: #050505;
+                padding: 0.75rem 1.5rem;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+              " onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 30px rgba(212, 175, 55, 0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(212, 175, 55, 0.3)';">
+                ${link.text}
+              </a>
+            `).join('')}
+          </div>
+        </div>
+      `;
+
+      document.getElementById('projectModalContent').innerHTML = content;
+      document.getElementById('projectModal').style.display = 'block';
+    }
+
+    function closeProjectModal() {
+      document.getElementById('projectModal').style.display = 'none';
+    }
+
+    // Close modal when pressing Escape
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeProjectModal();
+      }
+    });
+  </script>
 </body>
 </html>
