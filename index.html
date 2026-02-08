@@ -3,24 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taran Pal Singh Heera - AI & ML Engineer</title>
+  <title>Taran Pal Singh Heera - AI & ML Engineer | Premium Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
-    /* Premium Wings.Design Inspired Animations */
+    /* ==================== PREMIUM ANIMATIONS ==================== */
     @keyframes float-slow {
       0%, 100% { transform: translateY(0px) rotateZ(-1deg); }
       50% { transform: translateY(20px) rotateZ(1deg); }
-    }
-
-    @keyframes slide-in-right {
-      from {
-        opacity: 0;
-        transform: translateX(100px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
     }
 
     @keyframes gradient-shift {
@@ -28,10 +17,57 @@
       50% { background-position: 100% 50%; }
     }
 
+    @keyframes glow-pulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+      50% { box-shadow: 0 0 40px rgba(212, 175, 55, 0.6); }
+    }
+
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-60px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(60px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -1000px 0; }
+      100% { background-position: 1000px 0; }
+    }
+
+    /* ==================== HERO SECTION ==================== */
     .hero {
       position: relative;
       overflow: hidden;
-      min-height: 120vh;
+      min-height: 110vh;
+      display: flex;
+      align-items: center;
+      padding: 40px 0;
     }
 
     .hero::before {
@@ -41,158 +77,291 @@
       right: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle at 30% 60%, rgba(212, 175, 55, 0.15) 0%, transparent 50%);
+      background: radial-gradient(circle at 30% 60%, rgba(212, 175, 55, 0.12) 0%, transparent 50%);
       animation: float-slow 8s ease-in-out infinite;
       z-index: 0;
     }
 
-    .background-images {
+    .hero::after {
+      content: '';
       position: absolute;
-      top: 0;
-      right: 0;
-      width: 40%;
-      height: 100%;
-      z-index: 1;
-      opacity: 0.1;
-      pointer-events: none;
-      background-size: cover;
-      background-position: center;
+      bottom: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 70% 40%, rgba(192, 192, 192, 0.08) 0%, transparent 50%);
+      animation: float-slow 10s ease-in-out infinite reverse;
+      z-index: 0;
     }
 
     .hero-content {
       position: relative;
       z-index: 2;
-      padding: 80px 0;
+      width: 100%;
     }
 
-    .full-name {
-      font-size: 4.5rem;
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: 5rem;
       font-weight: 900;
-      background: linear-gradient(135deg, #d4af37 0%, #ffffff 50%, #d4af37 100%);
-      background-size: 200% 200%;
+      background: linear-gradient(135deg, #d4af37 0%, #ffffff 50%, #c0c0c0 100%);
+      background-size: 300% 300%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       line-height: 1.1;
-      letter-spacing: -2px;
-      margin-bottom: 1rem;
-      animation: gradient-shift 6s ease infinite;
+      letter-spacing: -3px;
+      margin-bottom: 0.5rem;
+      animation: gradient-shift 8s ease infinite, slideInLeft 0.8s ease-out;
     }
 
-    .tagline-premium {
-      font-size: 1.5rem;
-      color: #c0c0c0;
+    .tagline {
+      font-size: 1.4rem;
+      color: #d4af37;
       font-weight: 300;
-      letter-spacing: 3px;
+      letter-spacing: 4px;
       text-transform: uppercase;
+      margin-bottom: 2.5rem;
+      animation: slideInLeft 0.9s ease-out 0.2s both;
+    }
+
+    .hero-description {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #b8b8b8;
       margin-bottom: 3rem;
+      animation: slideInLeft 1s ease-out 0.3s both;
     }
 
-    .hero-images {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
-      margin-top: 3rem;
-      max-width: 500px;
+    .hero-description p {
+      margin-bottom: 1.2rem;
     }
 
-    .hero-img {
-      width: 100%;
-      height: 200px;
-      border-radius: 4px;
-      overflow: hidden;
-      border: 1px solid #d4af37;
-      animation: float-slow 6s ease-in-out infinite;
+    .hero-description strong {
+      color: #d4af37;
     }
 
-    .hero-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    .hero-img:hover img {
-      transform: scale(1.1);
-    }
-
-    .achievements-highlight {
-      background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(192, 192, 192, 0.05) 100%);
-      border: 1px solid #d4af37;
-      border-radius: 4px;
-      padding: 2.5rem;
-      margin-top: 4rem;
+    .achievements-box {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(192, 192, 192, 0.04) 100%);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 8px;
+      padding: 2rem 2.5rem;
+      margin: 2rem 0 3rem 0;
       backdrop-filter: blur(10px);
+      animation: slideInLeft 1.1s ease-out 0.4s both;
     }
 
-    .achievement-item {
+    .achievement-row {
       display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      margin-bottom: 1.5rem;
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .achievement-row:last-child {
+      margin-bottom: 0;
     }
 
     .achievement-icon {
-      width: 40px;
-      height: 40px;
-      background: #d4af37;
+      min-width: 36px;
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, #d4af37 0%, #e6c547 100%);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #0a0a0a;
-      font-size: 1.2rem;
-      flex-shrink: 0;
+      font-size: 1.1rem;
       font-weight: 900;
+      color: #0a0a0a;
     }
 
     .achievement-text {
-      color: var(--text-secondary);
-      line-height: 1.6;
+      flex: 1;
     }
 
     .achievement-text strong {
       color: #d4af37;
+      display: block;
+      margin-bottom: 0.3rem;
       font-weight: 700;
     }
 
+    .achievement-text span {
+      color: #b8b8b8;
+      font-size: 0.95rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1.2rem;
+      animation: slideInLeft 1.2s ease-out 0.5s both;
+    }
+
+    .hero-image-section {
+      position: relative;
+      animation: slideInRight 1s ease-out 0.3s both;
+    }
+
+    .hero-image {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid #d4af37;
+      box-shadow: 0 20px 60px rgba(212, 175, 55, 0.2);
+      animation: glow-pulse 3s ease-in-out infinite;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .hero-image:hover img {
+      transform: scale(1.08);
+    }
+
+    .hero-image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .gallery-item {
+      aspect-ratio: 1;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #d4af37;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.15);
+    }
+
+    /* ==================== RESPONSIVE HERO ==================== */
     @media (max-width: 1024px) {
-      .hero-content {
-        display: grid;
+      .hero-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
       }
 
-      .full-name {
+      .hero-text h1 {
         font-size: 3.5rem;
       }
 
-      .hero-images {
-        margin: 2rem auto;
+      .tagline {
+        font-size: 1.1rem;
+      }
+
+      .cta-buttons {
+        flex-wrap: wrap;
       }
     }
 
     @media (max-width: 768px) {
-      .hero-images {
-        grid-template-columns: 1fr;
-        max-width: 300px;
+      .hero {
+        min-height: auto;
+        padding: 30px 0;
       }
 
-      .full-name {
+      .hero-text h1 {
         font-size: 2.5rem;
+        letter-spacing: -1px;
       }
 
-      .tagline-premium {
-        font-size: 1.2rem;
+      .tagline {
+        font-size: 0.95rem;
+        letter-spacing: 2px;
       }
 
-      .achievements-highlight {
+      .hero-description {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .achievements-box {
         padding: 1.5rem;
       }
 
-      .achievement-item {
+      .achievement-row {
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .cta-buttons {
         flex-direction: column;
+      }
+
+      .cta-buttons .btn {
+        width: 100%;
         text-align: center;
+      }
+
+      .hero-image-grid {
+        gap: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 15px;
+      }
+
+      .hero {
+        padding: 20px 0;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+        margin-bottom: 0.3rem;
+      }
+
+      .tagline {
+        font-size: 0.85rem;
+      }
+
+      .achievement-row {
+        margin-bottom: 0.8rem;
+      }
+
+      .achievement-icon {
+        min-width: 32px;
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+      }
+
+      .achievement-text span {
+        font-size: 0.9rem;
+      }
+
+      .achievements-box {
+        padding: 1rem;
+        margin: 1.5rem 0 2rem 0;
       }
     }
   </style>
@@ -204,9 +373,9 @@
       <div class="logo">TARAN</div>
       <ul>
         <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#featured" class="nav-link">Featured</a></li>
         <li><a href="projects.html" class="nav-link">Projects</a></li>
         <li><a href="experience.html" class="nav-link">Experience</a></li>
-        <li><a href="resume.html" class="nav-link">Resume</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
     </nav>
@@ -214,69 +383,74 @@
 
   <!-- HERO SECTION -->
   <section class="hero" id="home">
-    <div class="background-images"></div>
     <div class="container">
       <div class="hero-content">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-          <div>
-            <h1 class="full-name">Taran Pal Singh Heera</h1>
-            <p class="tagline-premium">AI & ML Engineer</p>
+        <div class="hero-grid">
+          <!-- LEFT COLUMN: TEXT CONTENT -->
+          <div class="hero-text">
+            <h1>Taran Pal Singh Heera</h1>
+            <p class="tagline">AI & ML Engineer</p>
             
             <div class="hero-description">
-              <p>Building intelligent systems that solve real-world problems through <strong>Deep Learning</strong>, <strong>Computer Vision</strong>, and <strong>Full-Stack AI applications</strong>.</p>
-              <p>Currently developing <strong>AI-powered products</strong> at ANTRIVA AI LABS, transforming WhatsApp interactions into creative AI experiences. Passionate about production-ready ML systems and scalable architectures.</p>
+              <p>Crafting intelligent systems that transform industries through <strong>Deep Learning</strong>, <strong>Computer Vision</strong>, and <strong>Full-Stack AI</strong> solutions.</p>
+              <p>Leading the charge at <strong>ANTRIVA AI LABS</strong> with Printrove—an AI-powered WhatsApp experience reimagined. Driven by a passion for production-grade ML systems and enterprise-scale architectures.</p>
             </div>
 
-            <div class="achievements-highlight">
-              <div class="achievement-item">
+            <div class="achievements-box">
+              <div class="achievement-row">
                 <div class="achievement-icon">📄</div>
                 <div class="achievement-text">
-                  <strong>IEEE Publication:</strong> Gender & Age Detection from Facial Images using Deep Learning
+                  <strong>IEEE Publication</strong>
+                  <span>Gender & Age Detection from Facial Images</span>
                 </div>
               </div>
-              <div class="achievement-item">
+              <div class="achievement-row">
                 <div class="achievement-icon">🚀</div>
                 <div class="achievement-text">
-                  <strong>Printrove:</strong> AI-Powered T-Shirt Designer with Twilio WhatsApp & OpenAI DALLE-3
+                  <strong>Printrove AI Platform</strong>
+                  <span>Twilio WhatsApp + OpenAI DALLE-3 Integration</span>
                 </div>
               </div>
-              <div class="achievement-item">
+              <div class="achievement-row">
                 <div class="achievement-icon">🏆</div>
                 <div class="achievement-text">
-                  <strong>3 Enterprise AI Internships:</strong> ANTRIVA AI Labs, LogicFocus Technology, JuzGoDigital
+                  <strong>3 Enterprise Internships</strong>
+                  <span>ANTRIVA AI Labs • LogicFocus • JuzGoDigital</span>
                 </div>
               </div>
-              <div class="achievement-item">
+              <div class="achievement-row">
                 <div class="achievement-icon">💼</div>
                 <div class="achievement-text">
-                  <strong>Expertise:</strong> CNN, GANs, LLMs, Computer Vision, API Development, Full-Stack AI
+                  <strong>Core Expertise</strong>
+                  <span>CNN • GANs • LLMs • Computer Vision • Full-Stack AI</span>
                 </div>
               </div>
             </div>
 
             <div class="cta-buttons">
-              <a href="projects.html" class="btn btn-primary">View My Work</a>
-              <a href="contact.html" class="btn btn-secondary">Let's Connect</a>
+              <a href="#featured" class="btn btn-primary">Explore Work</a>
+              <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
             </div>
           </div>
 
-          <div>
+          <!-- RIGHT COLUMN: IMAGES -->
+          <div class="hero-image-section">
             <div class="hero-image">
-              <img src="assets/images/profile.jpeg" alt="Taran Pal Singh Heera">
+              <img src="assets/images/profile.jpeg" alt="Taran Pal Singh Heera - AI Engineer">
             </div>
-            
-            <div class="hero-images">
-              <div class="hero-img">
-                <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.41 AM.jpeg" alt="Project showcase">
+
+            <div class="hero-image-grid">
+              <div class="gallery-item">
+                <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.43 AM.jpeg" alt="Portfolio">
               </div>
-              <div class="hero-img">
-                <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.43 AM.jpeg" alt="Project showcase">
+              <div class="gallery-item">
+                <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.43 AM (1).jpeg" alt="Portfolio">
               </div>
-              <div class="hero-img">
-                <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.41 AM (1).jpeg" alt="Project showcase">
+              <div class="gallery-item">
+                <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.41 AM (1).jpeg" alt="Portfolio">
               </div>
-              <div class="hero-img">
-                <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.43 AM (1).jpeg" alt="Project showcase">
+              <div class="gallery-item">
+                <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.41 AM (1).jpeg" alt="Portfolio">
               </div>
             </div>
           </div>
@@ -285,172 +459,316 @@
     </div>
   </section>
 
-  <!-- FEATURED PROJECTS SECTION -->
+  <!-- ==================== FEATURED WORK SECTION (Wings.Design Style) ==================== -->
+  <section id="featured">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Work</h2>
+        <p>Showcase of cutting-edge AI systems and digital products</p>
+      </div>
+
+      <!-- FEATURED PROJECT 1: PRINTROVE (HERO FEATURE) -->
+      <div class="featured-project featured-large">
+        <div class="featured-content">
+          <div class="featured-label">Featured Project</div>
+          <h3>Printrove</h3>
+          <p class="featured-description">AI-Powered T-Shirt Designer transforming WhatsApp into a creative studio. Seamlessly integrates Twilio messaging, OpenAI DALLE-3 for generative design, and automated order processing.</p>
+          
+          <div class="project-specs">
+            <div class="spec">
+              <span class="spec-label">Challenge</span>
+              <span class="spec-value">Integrating WhatsApp commerce with AI design</span>
+            </div>
+            <div class="spec">
+              <span class="spec-label">Solution</span>
+              <span class="spec-value">Twilio API + OpenAI DALLE-3 + Python Backend</span>
+            </div>
+            <div class="spec">
+              <span class="spec-label">Impact</span>
+              <span class="spec-value">Automated design generation in real-time</span>
+            </div>
+          </div>
+
+          <div class="project-tags-featured">
+            <span class="tag-featured">WhatsApp API</span>
+            <span class="tag-featured">OpenAI DALLE-3</span>
+            <span class="tag-featured">Python</span>
+            <span class="tag-featured">Generative AI</span>
+            <span class="tag-featured">E-commerce</span>
+          </div>
+
+          <a href="https://github.com/Taran-heera" target="_blank" class="featured-cta">View Project →</a>
+        </div>
+        <div class="featured-image">
+          <div class="featured-placeholder" style="background: linear-gradient(135deg, #d4af37 0%, #c0c0c0 50%, #8b7500 100%);">
+            <span class="placeholder-icon">🎨</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURED PROJECT 2: NAYSBOX -->
+      <div class="featured-project featured-medium">
+        <div class="featured-image">
+          <div class="featured-placeholder" style="background: linear-gradient(135deg, #2a5cdb 0%, #6b9ce8 50%, #1a3fa0 100%);">
+            <span class="placeholder-icon">🌐</span>
+          </div>
+        </div>
+        <div class="featured-content">
+          <div class="featured-label">Web Project</div>
+          <h3>NaysBox</h3>
+          <p class="featured-description">Custom-built website showcasing modern web design with interactive features, responsive layouts, and premium user experience across all devices.</p>
+          
+          <div class="project-specs">
+            <div class="spec">
+              <span class="spec-label">Stack</span>
+              <span class="spec-value">Modern Web Technologies</span>
+            </div>
+            <div class="spec">
+              <span class="spec-label">Features</span>
+              <span class="spec-value">Responsive, Interactive, Optimized</span>
+            </div>
+          </div>
+
+          <div class="project-tags-featured">
+            <span class="tag-featured">Web Design</span>
+            <span class="tag-featured">Frontend</span>
+            <span class="tag-featured">Interactive</span>
+            <span class="tag-featured">Responsive</span>
+          </div>
+
+          <a href="#" target="_blank" class="featured-cta">View Live Site →</a>
+        </div>
+      </section>
+
+  <!-- ==================== PREMIUM PROJECTS SECTION ==================== -->
   <section id="projects">
     <div class="container">
-      <h2>Featured Projects</h2>
-      <p style="text-align: center; color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 3rem;">
-        Cutting-edge AI & ML applications deployed in production
-      </p>
-      
-      <div class="projects-grid">
-        <div class="project-card fade-in">
-          <div class="project-image">
-            <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.41 AM.jpeg" alt="Printrove">
-          </div>
-          <div class="project-info">
-            <h3>Printrove</h3>
-            <p class="project-description">AI-powered WhatsApp T-shirt design platform with OpenAI DALLE-3 integration and automated order processing.</p>
-            <div class="project-tags">
-              <span class="tag">WhatsApp API</span>
-              <span class="tag">OpenAI DALLE-3</span>
-              <span class="tag">Python</span>
-              <span class="tag">AI</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Taran-heera" target="_blank">GitHub →</a>
-            </div>
-          </div>
-        </div>
+      <div class="section-header">
+        <h2>AI & ML Projects</h2>
+        <p>Complete portfolio of cutting-edge machine learning applications</p>
+      </div>
 
-        <div class="project-card fade-in">
-          <div class="project-image">
-            <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.43 AM.jpeg" alt="CODDS">
+      <div class="projects-premium-grid">
+        <!-- PROJECT 1: CODDS -->
+        <div class="premium-project-card">
+          <div class="project-image-box">
+            <div class="project-gradient" style="background: linear-gradient(135deg, #1f1f1f 0%, #3a3a3a 50%, #1f1f1f 100%);"></div>
+            <div class="project-icon">🎯</div>
           </div>
-          <div class="project-info">
+          <div class="project-content">
             <h3>CODDS</h3>
-            <p class="project-description">Cognitive Originality Drift Detection System - Advanced AI for plagiarism detection and content originality analysis.</p>
-            <div class="project-tags">
-              <span class="tag">NLP</span>
-              <span class="tag">Deep Learning</span>
-              <span class="tag">TensorFlow</span>
+            <p class="project-subtitle">Cognitive Originality Drift Detection System</p>
+            <p class="project-description">Advanced AI system for plagiarism detection and content originality analysis using sophisticated deep learning algorithms and NLP techniques.</p>
+            
+            <div class="tech-stack">
+              <span class="tech">NLP</span>
+              <span class="tech">Deep Learning</span>
+              <span class="tech">TensorFlow</span>
+              <span class="tech">Python</span>
             </div>
-            <div class="project-links">
-              <a href="https://github.com/Taran-heera/CODDS" target="_blank">GitHub →</a>
-            </div>
+
+            <a href="https://github.com/Taran-heera/CODDS" target="_blank" class="project-link">GitHub Repository →</a>
           </div>
         </div>
 
-        <div class="project-card fade-in">
-          <div class="project-image">
-            <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.41 AM (1).jpeg" alt="NeuroFocus">
+        <!-- PROJECT 2: NEUROFOCUS -->
+        <div class="premium-project-card">
+          <div class="project-image-box">
+            <div class="project-gradient" style="background: linear-gradient(135deg, #1a2635 0%, #2d4a7a 50%, #1a2635 100%);"></div>
+            <div class="project-icon">👁️</div>
           </div>
-          <div class="project-info">
+          <div class="project-content">
             <h3>NeuroFocus</h3>
-            <p class="project-description">Real-time attention detection system using CNN and computer vision for educational and productivity applications.</p>
-            <div class="project-tags">
-              <span class="tag">Computer Vision</span>
-              <span class="tag">CNN</span>
-              <span class="tag">OpenCV</span>
+            <p class="project-subtitle">Real-Time Attention Detection System</p>
+            <p class="project-description">Computer vision system detecting attention levels in real-time using CNN architecture. Perfect for educational analytics and productivity monitoring.</p>
+            
+            <div class="tech-stack">
+              <span class="tech">Computer Vision</span>
+              <span class="tech">CNN</span>
+              <span class="tech">OpenCV</span>
+              <span class="tech">PyTorch</span>
             </div>
-            <div class="project-links">
-              <a href="https://github.com/Taran-heera/NeuroFocus" target="_blank">GitHub →</a>
-            </div>
+
+            <a href="https://github.com/Taran-heera/NeuroFocus" target="_blank" class="project-link">GitHub Repository →</a>
           </div>
         </div>
 
-        <div class="project-card fade-in">
-          <div class="project-image">
-            <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.43 AM (1).jpeg" alt="Portfolio Website">
+        <!-- PROJECT 3: LOW-LIGHT ENHANCEMENT -->
+        <div class="premium-project-card">
+          <div class="project-image-box">
+            <div class="project-gradient" style="background: linear-gradient(135deg, #2a1f35 0%, #5a3a7a 50%, #2a1f35 100%);"></div>
+            <div class="project-icon">🌙</div>
           </div>
-          <div class="project-info">
-            <h3>Web Portfolio</h3>
-            <p class="project-description">Premium responsive portfolio website with custom animations and modern design principles.</p>
-            <div class="project-tags">
-              <span class="tag">HTML/CSS</span>
-              <span class="tag">Frontend</span>
-              <span class="tag">Responsive</span>
+          <div class="project-content">
+            <h3>Low-Light Enhancement</h3>
+            <p class="project-subtitle">GAN-Powered Image Enhancement</p>
+            <p class="project-description">Generative Adversarial Network system for enhancing images captured in low-light conditions with exceptional quality and detail preservation.</p>
+            
+            <div class="tech-stack">
+              <span class="tech">GANs</span>
+              <span class="tech">Image Processing</span>
+              <span class="tech">TensorFlow</span>
+              <span class="tech">Keras</span>
             </div>
-            <div class="project-links">
-              <a href="https://lighthearted-pasca-7e48a7.netlify.app/" target="_blank">Live Demo →</a>
-              <a href="https://github.com/Taran-heera" target="_blank">GitHub →</a>
+
+            <a href="https://github.com/Taran-heera" target="_blank" class="project-link">GitHub Repository →</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: AGE & GENDER ESTIMATION -->
+        <div class="premium-project-card">
+          <div class="project-image-box">
+            <div class="project-gradient" style="background: linear-gradient(135deg, #352310 0%, #7a5a3a 50%, #352310 100%);"></div>
+            <div class="project-icon">👤</div>
+          </div>
+          <div class="project-content">
+            <h3>Age & Gender Estimation</h3>
+            <p class="project-subtitle">Facial Analysis Deep Learning Model</p>
+            <p class="project-description">Deep learning CNN model for accurately predicting age and gender from facial images. Published in IEEE with comprehensive evaluation metrics.</p>
+            
+            <div class="tech-stack">
+              <span class="tech">CNN</span>
+              <span class="tech">Classification</span>
+              <span class="tech">Keras</span>
+              <span class="tech">OpenCV</span>
             </div>
+
+            <a href="https://github.com/Taran-heera" target="_blank" class="project-link">GitHub Repository →</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 5: WEB PORTFOLIO -->
+        <div class="premium-project-card">
+          <div class="project-image-box">
+            <div class="project-gradient" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);"></div>
+            <div class="project-icon">💼</div>
+          </div>
+          <div class="project-content">
+            <h3>Premium Portfolio</h3>
+            <p class="project-subtitle">Modern Web Design</p>
+            <p class="project-description">Responsive portfolio website featuring modern design principles, smooth animations, and optimized performance across all devices.</p>
+            
+            <div class="tech-stack">
+              <span class="tech">HTML5</span>
+              <span class="tech">CSS3</span>
+              <span class="tech">JavaScript</span>
+              <span class="tech">Responsive</span>
+            </div>
+
+            <a href="https://lighthearted-pasca-7e48a7.netlify.app/" target="_blank" class="project-link">View Live →</a>
+          </div>
+        </div>
+
+        <!-- PROJECT 6: STARTUP PROJECT -->
+        <div class="premium-project-card">
+          <div class="project-image-box">
+            <div class="project-gradient" style="background: linear-gradient(135deg, #1a3a1a 0%, #2d5a2d 50%, #0f2810 100%);"></div>
+            <div class="project-icon">🚀</div>
+          </div>
+          <div class="project-content">
+            <h3>Startup Website</h3>
+            <p class="project-subtitle">Full-Stack Web Application</p>
+            <p class="project-description">Custom built website for startup venture. Complete design, development, and deployment of scalable web application with modern tech stack.</p>
+            
+            <div class="tech-stack">
+              <span class="tech">Full-Stack</span>
+              <span class="tech">Frontend</span>
+              <span class="tech">Backend</span>
+              <span class="tech">Database</span>
+            </div>
+
+            <a href="https://github.com/Taran-heera" target="_blank" class="project-link">GitHub Repository →</a>
           </div>
         </div>
       </div>
 
-      <div style="text-align: center; margin-top: 3rem;">
-        <a href="projects.html" class="btn btn-primary">Explore All Projects</a>
+      <div class="view-more-projects">
+        <a href="projects.html" class="btn btn-primary btn-large">View All Projects & Case Studies</a>
       </div>
+    </div>
+
     </div>
   </section>
 
-  <!-- SKILLS SECTION -->
+  <!-- ==================== SKILLS & EXPERTISE SECTION ==================== -->
   <section id="skills">
     <div class="container">
-      <h2>Core Competencies</h2>
-      
-      <div class="skills-grid">
-        <div class="skill-card fade-in">
+      <div class="section-header">
+        <h2>Skills & Expertise</h2>
+        <p>Comprehensive toolkit for building production-grade AI systems</p>
+      </div>
+
+      <div class="expertise-grid">
+        <div class="expertise-card">
           <h3>🤖 AI & Machine Learning</h3>
           <p>Deep neural networks, CNNs, RNNs, GANs, LLMs, transfer learning, model optimization, and production deployment.</p>
-          <div class="skills-list">
-            <span class="skill-tag">TensorFlow</span>
-            <span class="skill-tag">PyTorch</span>
-            <span class="skill-tag">Keras</span>
-            <span class="skill-tag">Scikit-learn</span>
-            <span class="skill-tag">DALL-E</span>
-            <span class="skill-tag">LLaMA</span>
+          <div class="skill-list">
+            <span class="skill-badge">TensorFlow</span>
+            <span class="skill-badge">PyTorch</span>
+            <span class="skill-badge">Keras</span>
+            <span class="skill-badge">Scikit-learn</span>
+            <span class="skill-badge">OpenAI APIs</span>
+            <span class="skill-badge">LLaMA</span>
           </div>
         </div>
 
-        <div class="skill-card fade-in">
+        <div class="expertise-card">
           <h3>👁️ Computer Vision</h3>
-          <p>Image classification, object detection, semantic segmentation, face recognition, real-time video analysis, and GAN applications.</p>
-          <div class="skills-list">
-            <span class="skill-tag">OpenCV</span>
-            <span class="skill-tag">CNN</span>
-            <span class="skill-tag">GANs</span>
-            <span class="skill-tag">YOLOv8</span>
-            <span class="skill-tag">Face Detection</span>
+          <p>Image classification, object detection, semantic segmentation, face recognition, real-time video analysis.</p>
+          <div class="skill-list">
+            <span class="skill-badge">OpenCV</span>
+            <span class="skill-badge">CNN Architectures</span>
+            <span class="skill-badge">GANs</span>
+            <span class="skill-badge">YOLOv8</span>
+            <span class="skill-badge">Face Detection</span>
           </div>
         </div>
 
-        <div class="skill-card fade-in">
-          <h3>💻 Backend Development</h3>
-          <p>API development, database design, microservices, cloud deployment, real-time processing, and system architecture.</p>
-          <div class="skills-list">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Flask</span>
-            <span class="skill-tag">FastAPI</span>
-            <span class="skill-tag">REST APIs</span>
-            <span class="skill-tag">PostgreSQL</span>
+        <div class="expertise-card">
+          <h3>💻 Backend & APIs</h3>
+          <p>RESTful API design, microservices, database optimization, cloud deployment, and system architecture.</p>
+          <div class="skill-list">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Flask</span>
+            <span class="skill-badge">FastAPI</span>
+            <span class="skill-badge">PostgreSQL</span>
+            <span class="skill-badge">MongoDB</span>
           </div>
         </div>
 
-        <div class="skill-card fade-in">
+        <div class="expertise-card">
           <h3>🌐 Full-Stack Development</h3>
-          <p>End-to-end AI application development from data processing to deployment, Streamlit apps, web interfaces, and cloud services.</p>
-          <div class="skills-list">
-            <span class="skill-tag">Streamlit</span>
-            <span class="skill-tag">HTML/CSS/JS</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">Docker</span>
+          <p>End-to-end AI application development, Streamlit apps, web interfaces, and integrated deployments.</p>
+          <div class="skill-list">
+            <span class="skill-badge">Streamlit</span>
+            <span class="skill-badge">HTML/CSS/JS</span>
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">Git/GitHub</span>
+            <span class="skill-badge">Docker</span>
           </div>
         </div>
 
-        <div class="skill-card fade-in">
+        <div class="expertise-card">
           <h3>📊 Data Science</h3>
-          <p>Data analysis, visualization, feature engineering, statistical modeling, and data-driven insights for business intelligence.</p>
-          <div class="skills-list">
-            <span class="skill-tag">Pandas</span>
-            <span class="skill-tag">NumPy</span>
-            <span class="skill-tag">Matplotlib</span>
-            <span class="skill-tag">Seaborn</span>
-            <span class="skill-tag">EDA</span>
+          <p>Data analysis, visualization, feature engineering, statistical modeling, and data-driven insights.</p>
+          <div class="skill-list">
+            <span class="skill-badge">Pandas</span>
+            <span class="skill-badge">NumPy</span>
+            <span class="skill-badge">Matplotlib</span>
+            <span class="skill-badge">Seaborn</span>
+            <span class="skill-badge">EDA</span>
           </div>
         </div>
 
-        <div class="skill-card fade-in">
+        <div class="expertise-card">
           <h3>🔧 Tools & Platforms</h3>
-          <p>Version control, collaboration tools, cloud platforms, deployment services, and development environments.</p>
-          <div class="skills-list">
-            <span class="skill-tag">Git/GitHub</span>
-            <span class="skill-tag">Jupyter</span>
-            <span class="skill-tag">VS Code</span>
-            <span class="skill-tag">AWS</span>
-            <span class="skill-tag">Netlify</span>
+          <p>Development environments, collaboration tools, cloud services, and deployment platforms.</p>
+          <div class="skill-list">
+            <span class="skill-badge">Jupyter</span>
+            <span class="skill-badge">VS Code</span>
+            <span class="skill-badge">AWS</span>
+            <span class="skill-badge">Netlify</span>
+            <span class="skill-badge">Linux</span>
           </div>
         </div>
       </div>
@@ -460,33 +778,36 @@
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="experience.html">Experience</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://github.com/Taran-heera" target="_blank" title="GitHub">GitHub</a>
+            <a href="https://linkedin.com/in/taran-pal-singh-heera" target="_blank" title="LinkedIn">LinkedIn</a>
+            <a href="mailto:taranpalsingh53@gmail.com" title="Email">Email</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Current Focus</h4>
+          <p>Building production-grade AI systems @ ANTRIVA AI LABS</p>
+        </div>
       </div>
 
-      <div class="social-links">
-        <a href="https://github.com/Taran-heera" target="_blank" title="GitHub">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-          </svg>
-        </a>
-        <a href="https://linkedin.com/in/taran-pal-singh-heera" target="_blank" title="LinkedIn">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-          </svg>
-        </a>
-        <a href="mailto:taranpalsingh53@gmail.com" title="Email">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-          </svg>
-        </a>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Taran Pal Singh Heera. All rights reserved.</p>
       </div>
-
-      <p>&copy; 2026 Taran Pal Singh Heera. All rights reserved.</p>
     </div>
   </footer>
 
