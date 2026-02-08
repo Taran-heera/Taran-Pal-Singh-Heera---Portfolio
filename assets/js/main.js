@@ -157,7 +157,8 @@ function toggleMobileMenu() {
 // ============================================
 // CONSOLE MESSAGE
 // ============================================
-console.log('%c👋 Welcome to Taran\'s Portfolio!', 'color: #00d4ff; font-size: 20px; font-weight: bold;');
-console.log('%cCheck out the projects and feel free to reach out!', 'color: #ff006e; font-size: 14px;');
-console.log('%cGitHub: https://github.com/Taran-heera', 'color: #00d4ff;');
-console.log('%cLinkedIn: https://linkedin.com/in/taran-pal-singh-heera', 'color: #00d4ff;');
+console.log('%c✨ TARAN PAL SINGH HEERA - PREMIUM PORTFOLIO ✨', 'color: #d4af37; font-size: 18px; font-weight: bold;');
+console.log('%cAI & Machine Learning Engineer', 'color: #c0c0c0; font-size: 14px; font-weight: 600;');
+console.log('%cGitHub: https://github.com/Taran-heera', 'color: #d4af37; font-weight: 600;');
+console.log('%cLinkedIn: https://linkedin.com/in/taran-pal-singh-heera', 'color: #d4af37; font-weight: 600;');
+console.log('%cEmail: taranpalsingh53@gmail.com', 'color: #d4af37; font-weight: 600;');
