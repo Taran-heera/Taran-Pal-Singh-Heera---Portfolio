@@ -40,8 +40,8 @@
     input:focus, textarea:focus {
       outline: none;
       border-color: var(--primary);
-      background: rgba(0, 212, 255, 0.05);
-      box-shadow: 0 0 10px rgba(0, 212, 255, 0.1);
+      background: rgba(212, 175, 55, 0.05);
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
     }
 
     textarea {
@@ -56,21 +56,23 @@
 
     .submit-btn {
       width: 100%;
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      background: var(--primary);
       color: var(--bg-dark);
       border: none;
       padding: 1rem;
-      border-radius: 8px;
-      font-weight: 600;
+      border-radius: 4px;
+      font-weight: 700;
       font-size: 1rem;
       cursor: pointer;
       transition: all 0.3s ease;
-      box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     .submit-btn:hover {
       transform: translateY(-3px);
-      box-shadow: 0 12px 30px rgba(0, 212, 255, 0.5);
+      box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
     }
 
     .contact-methods {
@@ -81,9 +83,9 @@
     }
 
     .contact-method {
-      background: var(--bg-card);
+      background: linear-gradient(135deg, var(--bg-card) 0%, rgba(42, 42, 42, 0.3) 100%);
       padding: 2rem;
-      border-radius: 12px;
+      border-radius: 4px;
       border: 1px solid var(--border);
       text-align: center;
       transition: all 0.3s ease;
@@ -92,7 +94,7 @@
     .contact-method:hover {
       border-color: var(--primary);
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 212, 255, 0.15);
+      box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
     }
 
     .contact-method-icon {
@@ -227,7 +229,7 @@
         </a>
       </div>
 
-      <p>&copy; 2026 Taran Pal Singh Heera. All rights reserved. | Designed & Built with AI</p>
+      <p>&copy; 2026 Taran Pal Singh Heera. All rights reserved.</p>
     </div>
   </footer>
 
@@ -249,7 +251,7 @@
       // Show response message
       const responseMessage = document.getElementById('responseMessage');
       responseMessage.style.display = 'block';
-      responseMessage.style.background = 'rgba(0, 212, 255, 0.1)';
+      responseMessage.style.background = 'rgba(212, 175, 55, 0.1)';
       responseMessage.style.borderLeft = '4px solid var(--primary)';
       responseMessage.style.color = 'var(--primary)';
       responseMessage.innerHTML = '✅ Thank you for your message! I\'ll get back to you soon.';
