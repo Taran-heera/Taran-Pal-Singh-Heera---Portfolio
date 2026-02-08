@@ -323,6 +323,11 @@
 
       .hero-image-grid {
         gap: 0.8rem;
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item {
+        aspect-ratio: 16/9;
       }
     }
 
@@ -446,10 +451,7 @@
               <div class="gallery-item">
                 <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.43 AM (1).jpeg" alt="Portfolio">
               </div>
-              <div class="gallery-item">
-                <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.41 AM (1).jpeg" alt="Portfolio">
-              </div>
-              <div class="gallery-item">
+              <div class="gallery-item" style="grid-column: span 2;">
                 <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.41 AM (1).jpeg" alt="Portfolio">
               </div>
             </div>
