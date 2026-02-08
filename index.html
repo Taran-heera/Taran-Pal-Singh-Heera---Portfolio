@@ -12,19 +12,19 @@
     <nav class="container">
       <div class="logo">Taran Pal Singh Heera</div>
       <ul>
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#resume" class="nav-link">Resume</a></li>
-        <li><a href="#achievements" class="nav-link">Achievements</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#home" class="nav-link active" data-tab="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-tab="about">About</a></li>
+        <li><a href="#projects" class="nav-link" data-tab="projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" data-tab="experience">Experience</a></li>
+        <li><a href="#resume" class="nav-link" data-tab="resume">Resume</a></li>
+        <li><a href="#achievements" class="nav-link" data-tab="achievements">Achievements</a></li>
+        <li><a href="#contact" class="nav-link" data-tab="contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- ==================== HERO SECTION ==================== -->
-  <section id="home" class="hero">
+  <section id="home" class="hero" data-tab="home">
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
@@ -40,8 +40,21 @@
         </div>
         
         <div class="hero-image-section">
-          <div class="profile-image main-image">
-            <img src="assets/images/profile.jpeg" alt="Taran Pal Singh Heera" style="animation: slideInRight 1s ease-out 0.3s both;">
+          <div class="hero-images-container">
+            <div class="profile-image main-image">
+              <img src="assets/images/profile.jpeg" alt="Taran Pal Singh Heera" style="animation: slideInRight 1s ease-out 0.3s both;">
+            </div>
+            <div class="collage-box">
+              <div class="collage-item">
+                <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.41 AM (1).jpeg" alt="Collage 1">
+              </div>
+              <div class="collage-item">
+                <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.43 AM (1).jpeg" alt="Collage 2">
+              </div>
+              <div class="collage-item">
+                <img src="assets/images/WhatsApp Image 2026-02-08 at 9.55.43 AM.jpeg" alt="Collage 3">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -49,7 +62,7 @@
   </section>
 
   <!-- ==================== ABOUT ME SECTION ==================== -->
-  <section id="about" class="about">
+  <section id="about" class="about" data-tab="about" style="display: none;">
     <div class="container">
       <div class="section-header">
         <h2>About Me</h2>
@@ -93,7 +106,7 @@
   </section>
 
   <!-- ==================== SKILLS SECTION ==================== -->
-  <section id="skills" class="skills">
+  <section id="skills" class="skills" data-tab="skills" style="display: none;">
     <div class="container">
       <div class="section-header">
         <h2>Technical Skills</h2>
@@ -171,7 +184,7 @@
   </section>
 
   <!-- ==================== PROJECTS SECTION ==================== -->
-  <section id="projects" class="projects-section">
+  <section id="projects" class="projects-section" data-tab="projects" style="display: none;">
     <div class="container">
       <div class="section-header">
         <h2>Projects</h2>
@@ -297,7 +310,7 @@
   </section>
 
   <!-- ==================== WORK EXPERIENCE SECTION ==================== -->
-  <section id="experience" class="work-experience">
+  <section id="experience" class="work-experience" data-tab="experience" style="display: none;">
     <div class="container">
       <div class="section-header">
         <h2>Work Experience</h2>
@@ -359,7 +372,7 @@
   </section>
 
   <!-- ==================== RESUME SECTION ==================== -->
-  <section id="resume" class="resume-section-page">
+  <section id="resume" class="resume-section-page" data-tab="resume" style="display: none;">
     <div class="container">
       <div class="section-header">
         <h2>Resume</h2>
@@ -403,7 +416,7 @@
   </section>
 
   <!-- ==================== ACHIEVEMENTS SECTION ==================== -->
-  <section id="achievements" class="achievements">
+  <section id="achievements" class="achievements" data-tab="achievements" style="display: none;">
     <div class="container">
       <div class="section-header">
         <h2>Achievements & Certifications</h2>
@@ -460,8 +473,11 @@
           </div>
           <p class="achievement-period">Published Research</p>
           <p class="achievement-desc">Published IEEE paper on advanced gender and age estimation using deep learning CNN models</p>
+          <div class="achievement-image-container">
+            <img src="assets/files/ieee-paper.jpeg" alt="IEEE Paper on Gender and Age Detection" class="achievement-image">
+          </div>
           <div class="achievement-links">
-            <a href="assets/files/ieee-cyber.pdf" target="_blank" class="achievement-link">Paper</a>
+            <a href="assets/files/ieee-cyber.pdf" target="_blank" class="achievement-link">View Paper</a>
           </div>
         </div>
 
@@ -547,7 +563,7 @@
   </section>
 
   <!-- ==================== CONTACT SECTION ==================== -->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact" data-tab="contact" style="display: none;">
     <div class="container">
       <div class="section-header">
         <h2>Get In Touch</h2>
@@ -555,33 +571,37 @@
       </div>
 
       <div class="contact-content">
-        <div class="contact-info">
-          <div class="contact-method">
-            <span class="contact-icon">📧</span>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-card-icon">📧</div>
             <h3>Email</h3>
-            <a href="mailto:tarranheera@gmail.com">tarranheera@gmail.com</a>
+            <p class="contact-card-text">Get in touch via email for inquiries and opportunities</p>
+            <a href="mailto:taranpalsingh53@gmail.com" class="contact-card-link">taranpalsingh53@gmail.com</a>
           </div>
 
-          <div class="contact-method">
-            <span class="contact-icon">🔗</span>
+          <div class="contact-card">
+            <div class="contact-card-icon">🔗</div>
             <h3>Connect</h3>
-            <div class="social-links">
+            <p class="contact-card-text">Follow my professional profiles and contributions</p>
+            <div class="contact-social">
               <a href="https://linkedin.com/in/taran-pal-singh-heera" target="_blank" class="social-link">LinkedIn</a>
               <a href="https://github.com/Taran-heera" target="_blank" class="social-link">GitHub</a>
               <a href="https://leetcode.com/u/Taranpalsinghheera/" target="_blank" class="social-link">LeetCode</a>
             </div>
           </div>
 
-          <div class="contact-method">
-            <span class="contact-icon">📍</span>
+          <div class="contact-card">
+            <div class="contact-card-icon">📍</div>
             <h3>Location</h3>
-            <p>India</p>
+            <p class="contact-card-text">Based in India, open to remote opportunities</p>
+            <p class="contact-location">India</p>
           </div>
         </div>
 
-        <div class="contact-cta">
+        <div class="contact-cta-box">
+          <h3>Let's Build Something Amazing Together</h3>
           <p>I'm always interested in hearing about new projects and opportunities. Whether you have an idea, need AI solutions, or want to collaborate, feel free to reach out!</p>
-          <a href="mailto:tarranheera@gmail.com" class="btn btn-primary btn-large">Send Email</a>
+          <a href="mailto:taranpalsingh53@gmail.com" class="btn btn-primary btn-large">Send Me an Email</a>
         </div>
       </div>
     </div>
@@ -850,6 +870,60 @@
       height: 100%;
       object-fit: cover;
       animation: glow-pulse 3s ease-in-out infinite;
+    }
+
+    /* ==================== COLLAGE BOX STYLES ==================== */
+    .collage-box {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      grid-template-rows: repeat(2, 150px);
+      gap: 1rem;
+      animation: slideInRight 1s ease-out 0.5s both;
+    }
+
+    .collage-item {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid #d4af37;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.2);
+    }
+
+    .collage-item:nth-child(1) {
+      grid-column: 1;
+      grid-row: 1;
+      animation: slideInUp 0.8s ease-out 0.6s both;
+    }
+
+    .collage-item:nth-child(2) {
+      grid-column: 2;
+      grid-row: 1;
+      animation: slideInUp 0.8s ease-out 0.65s both;
+    }
+
+    .collage-item:nth-child(3) {
+      grid-column: 1 / 2;
+      grid-row: 2;
+      animation: slideInUp 0.8s ease-out 0.7s both;
+    }
+
+    .collage-item:hover {
+      transform: scale(1.08) rotate(2deg);
+      box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4), inset 0 1px 0 rgba(212, 175, 55, 0.2);
+      border-color: #e5c158;
+    }
+
+    .collage-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .collage-item:hover img {
+      transform: scale(1.1);
     }
 
     @keyframes fadeInLeft {
@@ -1474,6 +1548,34 @@
       color: #d4af37;
       font-weight: 600;
       margin-bottom: 0.8rem;
+    }
+
+    .achievement-image-container {
+      width: 100%;
+      height: 200px;
+      margin: 1.5rem 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid rgba(212, 175, 55, 0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .achievement-image-container:hover {
+      border-color: #d4af37;
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+    }
+
+    .achievement-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .achievement-image-container:hover .achievement-image {
+      transform: scale(1.08);
+    }
       letter-spacing: 1px;
     }
 
@@ -1528,82 +1630,186 @@
     /* ==================== CONTACT SECTION ==================== */
     .contact {
       padding: 100px 0;
-      background: #050505;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 50%, #0a0a0a 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact::before {
+      content: '';
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+      top: -100px;
+      right: -100px;
+      animation: float 8s ease-in-out infinite;
+      z-index: 0;
+    }
+
+    .contact::after {
+      content: '';
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+      bottom: 50px;
+      left: -100px;
+      animation: float 10s ease-in-out infinite reverse;
+      z-index: 0;
     }
 
     .contact-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .contact-info {
+      position: relative;
+      z-index: 1;
       display: flex;
       flex-direction: column;
-      gap: 3rem;
+      gap: 4rem;
     }
 
-    .contact-method {
-      display: flex;
-      align-items: flex-start;
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
+      margin-bottom: 2rem;
     }
 
-    .contact-icon {
-      font-size: 2.5rem;
+    .contact-card {
+      background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(42, 26, 42, 0.6) 100%);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      padding: 2.5rem;
+      border-radius: 16px;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
     }
 
-    .contact-method h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
+    .contact-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .contact-card:hover {
+      background: linear-gradient(135deg, rgba(26, 26, 26, 1) 0%, rgba(42, 30, 55, 0.9) 100%);
+      border-color: #d4af37;
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 50px rgba(212, 175, 55, 0.25), inset 0 1px 0 rgba(212, 175, 55, 0.1);
+    }
+
+    .contact-card:hover::before {
+      opacity: 1;
+    }
+
+    .contact-card-icon {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      animation: bounce 2s ease-in-out infinite;
+    }
+
+    .contact-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
       color: #d4af37;
+      font-weight: 700;
     }
 
-    .contact-method a {
-      color: #b8b8b8;
+    .contact-card-text {
+      color: #999;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .contact-card-link {
+      display: inline-block;
+      color: #d4af37;
       text-decoration: none;
-      transition: color 0.3s ease;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      margin-top: 0.5rem;
     }
 
-    .contact-method a:hover {
+    .contact-card-link:hover {
+      background: #d4af37;
+      color: #050505;
+      border-color: #d4af37;
+    }
+
+    .contact-location {
       color: #d4af37;
+      font-size: 1.05rem;
+      font-weight: 600;
     }
 
-    .social-links {
+    .contact-social {
       display: flex;
-      gap: 1rem;
+      gap: 0.8rem;
+      justify-content: center;
       flex-wrap: wrap;
     }
 
     .social-link {
       display: inline-block;
-      padding: 0.5rem 1.2rem;
+      padding: 0.6rem 1.3rem;
       background: rgba(212, 175, 55, 0.1);
-      border: 1px solid rgba(212, 175, 55, 0.3);
+      border: 1px solid rgba(212, 175, 55, 0.2);
       color: #d4af37;
       text-decoration: none;
       border-radius: 6px;
       transition: all 0.3s ease;
+      font-size: 0.9rem;
+      font-weight: 600;
     }
 
     .social-link:hover {
       background: #d4af37;
       color: #050505;
+      border-color: #d4af37;
+      transform: translateY(-2px);
     }
 
-    .contact-cta {
+    .contact-cta-box {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+      border: 2px solid rgba(212, 175, 55, 0.3);
+      padding: 3.5rem;
+      border-radius: 20px;
       text-align: center;
-      background: rgba(212, 175, 55, 0.05);
-      padding: 3rem;
-      border-radius: 12px;
-      border: 2px solid rgba(212, 175, 55, 0.2);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 12px 40px rgba(212, 175, 55, 0.15);
     }
 
-    .contact-cta p {
-      font-size: 1.1rem;
+    .contact-cta-box h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #ffffff 0%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+    }
+
+    .contact-cta-box p {
       color: #b8b8b8;
+      font-size: 1.05rem;
       margin-bottom: 2rem;
+      line-height: 1.8;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* ==================== FOOTER ==================== */
@@ -1690,6 +1896,55 @@
       }
       100% {
         box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px) translateX(0px);
+      }
+      33% {
+        transform: translateY(-30px) translateX(10px);
+      }
+      66% {
+        transform: translateY(-20px) translateX(-10px);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -1000px 0;
+      }
+      100% {
+        background-position: 1000px 0;
+      }
+    }
+
+    /* ==================== TAB-BASED NAVIGATION ==================== */
+    section[data-tab] {
+      min-height: 100vh;
+      animation: fadeIn 0.5s ease-in;
+    }
+
+    section[data-tab][style*="display: none"] {
+      display: none !important;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
       }
     }
 
@@ -1783,6 +2038,16 @@
       .profile-image {
         width: 200px;
         height: 200px;
+      }
+
+      .collage-box {
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(2, 100px);
+        gap: 0.8rem;
+      }
+
+      .collage-item {
+        border-radius: 10px;
       }
 
       .skills-grid {
@@ -1953,6 +2218,10 @@
       .hero-images-container {
         flex-direction: column;
         gap: 1.2rem;
+      }
+
+      .collage-box {
+        display: none;
       }
 
       .section-header h2 {
